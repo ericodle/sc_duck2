@@ -181,6 +181,28 @@
 					color: var(--contrast-color);
 				}
 			}
+		.company-logo {
+			height: 3rem; 
+			width: auto;
+			vertical-align: middle; 
+			}
+		}
+
+		#contact a {
+			color: var(--fg-muted-5);
+			font-weight: 800;
+
+			&:hover {
+				color: var(--fg-color);
+			}
+
+			&.active {
+				color: var(--accent-color);
+
+				&:hover {
+					color: var(--contrast-color);
+				}
+			}
 
 			.icon {
 				-webkit-mask-image: var(--icon-feed);

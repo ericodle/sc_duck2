@@ -12,14 +12,13 @@
 			<!--home-->
 			<li id="home">
 				<a href="{{ get_url(path='/', lang=lang) }}"
-					{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path="/", lang=lang) | trim_end_matches(pat='/') | safe -%}
-						class="active"
-					{%- endif -%}>
-					<i class="icon"></i>
-					{{- config.title -}}
+				{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path="/", lang=lang) | trim_end_matches(pat='/') | safe -%}
+					class="active"
+				{%- endif -%}>
+				<!-- Replace the icon with the logo image -->
+				<img class="company-logo" src="logo_white.webp" alt="Company Logo" />
 				</a>
 			</li>
-			
 			<li class="divider"></li>
 			{%- for link in config.extra.nav.links %}
 				{%- if link.menu and link.menu | length > 0 -%}
