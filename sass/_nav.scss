@@ -183,9 +183,9 @@
 			}
 
 			.icon {
-				-webkit-mask-image: var(--icon-home);
+				-webkit-mask-image: var(--icon-feed);
 				vertical-align: -0.125em;
-				mask-image: var(--icon-home);
+				mask-image: var(--icon-feed);
 				transition: var(--transition);
 				margin-inline-end: 0.25rem;
 			}
