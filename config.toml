@@ -204,7 +204,8 @@ show_repo = true
 links = [
 	{ url = "@/about_us/_index.md", name = "About us" },
 	{ url = "@/products/_index.md", name = "Products"},
-	{ url = "@/news/_index.md", name = "News"}
+	{ url = "@/news/_index.md", name = "News"},
+	{ url = "@/recruit/_index.md", name = "Recruit"}
 ]
 
 [extra.footer]
