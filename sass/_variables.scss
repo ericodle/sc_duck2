@@ -17,7 +17,7 @@
 @include theme-variables using ($theme) {
 	@if $theme == "dark" {
 		// COLORS
-		--bg-color: color-mix(in srgb, var(--accent-color) 10%, black);
+		--bg-color: color-mix(in srgb, var(--accent-color) 10%, rgb(30, 42, 70));
 		--bg-overlay: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
 		--fg-color: rgb(255 255 255);
 		--fg-contrast: rgb(0 0 0 / 0.8);
