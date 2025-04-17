@@ -202,21 +202,17 @@ show_repo = true
 # i.e. "@/blog/_index.md".
 # See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
-	{ name = "Links", menu = [
-		{ url = "@/blog/_index.md", name = "Blog" },
-		{ url = "@/demo/index.md", name = "Demo" },
-		{ url = "@/mods/index.md", name = "Mods" }
-	] },
-	{ url = "https://daudix.one/coffee/", name = "Coffee" }
+	{ url = "@/about_us/_index.md", name = "About us" },
+	{ url = "@/products/_index.md", name = "Products"}
 ]
 
 [extra.footer]
 # Links used in the footer.
 # Same as the nav ones.
 links = [
-	{ url = "@/blog/_index.md", name = "Blog" },
-	{ url = "@/demo/index.md", name = "Demo" },
-	{ url = "@/mods/index.md", name = "Mods" },
+	{ url = "https://daudix.one/coffee/", name = "Coffee" },
+	{ url = "https://daudix.one/coffee/", name = "Coffee" },
+	{ url = "https://daudix.one/coffee/", name = "Coffee" },
 	{ url = "https://daudix.one/coffee/", name = "Coffee" }
 ]
 # Social links in the footer.
