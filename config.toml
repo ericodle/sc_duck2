@@ -1,6 +1,6 @@
-title = "Duckquill"
+title = "Space Cubics"
 base_url = "https://duckquill.daudix.one"
-description = "Opinionated, modern, pretty, and clean Zola theme."
+description = "Site built using Zola and the Duckquill Theme."
 
 compile_sass = true
 minify_html = true
@@ -9,7 +9,7 @@ generate_feeds = true
 # other feeds will still be available in page's head.
 feed_filenames = ["rss.xml", "atom.xml"]
 build_search_index = true
-author = "Duck Quack"
+author = "EO"
 
 # Based on https://github.com/welpo/tabi
 #
