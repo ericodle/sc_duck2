@@ -20,39 +20,7 @@ title = "Home"
 ```
 {% end %}
 
-# Duckquill
-
-Duckquill is an opinionated, modern, pretty, and clean [Zola](https://www.getzola.org) theme that has the purpose of greatly simplifying the process of rolling up your blog. It aims to provide all the necessary options for comfortable writing, while keeping the balance of simplicity.
-
-With it, you can change some configuration variables, tweak some of the included graphics, and have a nice blog up in minutes!
-
-Some of the features Duckquill has to offer:
-
-- Cute and informative social media cards for Discourse, Facebook, LinkedIn, Mastodon and more.
-- [Mastodon-powered comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/); comment under a post by using your Mastodon account.
-- Lightweight by default, powerful when needed; no mandatory JavaScript is used by default.
-- Privacy respecting analytics using [GoatCounter](https://www.goatcounter.com), with support for self-hosting.
-- Estimated read time of the post; put away those with short attention spans.
-- Light/dark/system theme switcher (for some reason everyone likes these).
-- Everything is tinted with the user-defined accent color for a pleasant look.
-- GitHub-style alerts. Yes, they're pretty, but don't overuse them. 
-- Post banners; they're even used in the social media cards!
-- YouTube/Vimeo shortcodes for easy video embedding.
-- Tiny by default; only ~100kB. Take that, 5MB Medium!
-- Customizable copyright text; you Better Quack Soul!
-- Image styling via URL. Yes, you read that right.
-- Useless CRT style that everyone seems to like.
-- Fully localizeable, worry not, [it's pretty easy](#localization).
-- Social links in the footer, with special styling.
-- LaTeX markup support via the [KaTeX](https://katex.org) library.
-- Emoji favicon if you're lazy to draw one.
-- Copy button for code blocks.
-- Search functionality.
-
-{% alert(tip=true) %}
-If you use Duckquill and enjoy it, or just like my work, please consider [buying me a coffee](https://daudix.one/coffee/), it would mean the world to me ^^.
-{% end %}
-
+![about](about.png)
 ## Installation
 
 First, if you already have Git setup, add this theme as a submodule:
