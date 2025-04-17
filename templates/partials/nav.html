@@ -9,6 +9,7 @@
 			{{ macros_translate::translate(key="skip_to_content", default="Skip to Main Content", language_strings=language_strings) }}
 		</a>
 		<ul>
+			<!--home-->
 			<li id="home">
 				<a href="{{ get_url(path='/', lang=lang) }}"
 					{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path="/", lang=lang) | trim_end_matches(pat='/') | safe -%}
@@ -94,13 +95,14 @@
 						</ul>
 					</details>
 				</li>
-				<li id="home">
-					<a href="{{ get_url(path='/', lang=lang) }}"
-						{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path="/", lang=lang) | trim_end_matches(pat='/') | safe -%}
+				<!--contact-->
+				<li id="contact">
+					<a href="{{ get_url(path='contact', lang=lang) }}"
+						{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path="contact", lang=lang) | trim_end_matches(pat='/') | safe -%}
 							class="active"
 						{%- endif -%}>
 						<i class="icon"></i>
-						Contact
+						{{ macros_translate::translate(key="contact", default="Contact", language_strings=language_strings) }}
 					</a>
 				</li>
 			{%- endif %}
