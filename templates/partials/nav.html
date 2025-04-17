@@ -18,6 +18,7 @@
 					{{- config.title -}}
 				</a>
 			</li>
+			
 			<li class="divider"></li>
 			{%- for link in config.extra.nav.links %}
 				{%- if link.menu and link.menu | length > 0 -%}
@@ -93,6 +94,15 @@
 						</ul>
 					</details>
 				</li>
+				<li id="home">
+					<a href="{{ get_url(path='/', lang=lang) }}"
+						{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path="/", lang=lang) | trim_end_matches(pat='/') | safe -%}
+							class="active"
+						{%- endif -%}>
+						<i class="icon"></i>
+						{{- config.title -}}
+					</a>
+				</li>
 			{%- endif %}
 			{%- if config.feed_filenames | length > 1 and config.extra.nav.show_feed -%}
 				<li id="feed">
@@ -115,6 +125,7 @@
 						</ul>
 					</details>
 				</li>
+				
 			{%- elif config.generate_feeds and config.extra.nav.show_feed %}
 				<li id="feed">
 					<a class="circle" href="{{ get_url(path=config.feed_filenames[0], lang=lang) }}" title="{{ macros_translate::translate(key='feed', default='Feed', language_strings=language_strings) }}">
@@ -122,7 +133,7 @@
 					</a>
 				</li>
 			{%- endif %}
-			{%- if config.extra.source_url and config.extra.nav.show_repo %}
+			{%- if config.extra.contact_url and config.extra.nav.show_repo %}
 				<li id="repo">
 					<a class="circle" href="{{ config.extra.source_url }}" title="{{ macros_translate::translate(key='repo', default='Repository', language_strings=language_strings) }}">
 						<i class="icon"></i>
@@ -130,6 +141,7 @@
 				</li>
 			{%- endif %}
 		</ul>
+		
 	</nav>
 	{%- if config.build_search_index %}
 		<div id="search-container">
@@ -142,4 +154,5 @@
 			</div>
 		</div>
 	{%- endif %}
+	
 </header>
