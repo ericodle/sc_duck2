@@ -4,6 +4,7 @@
 	border-radius: 0;
 	width: 100%;
 	max-width: 100%;
+	font-size: 1rem;
 
 	&::before {
 		box-shadow: var(--shadow-glass);
@@ -38,5 +39,22 @@
 		#search-bar {
 			border-radius: var(--rounded-corner);
 		}
+	}
+
+	// Right-side icon styling (Search, Theme, Repo, etc.)
+	nav ul li button.circle,
+	nav ul li a.circle,
+	nav ul li summary.circle {
+		width: 2.75rem;
+		height: 2.75rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	nav ul li button .icon,
+	nav ul li a.circle .icon,
+	nav ul li summary.circle .icon {
+		font-size: 1.75rem;
 	}
 }

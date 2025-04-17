@@ -203,7 +203,8 @@ show_repo = true
 # See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
 	{ url = "@/about_us/_index.md", name = "About us" },
-	{ url = "@/products/_index.md", name = "Products"}
+	{ url = "@/products/_index.md", name = "Products"},
+	{ url = "@/news/_index.md", name = "News"}
 ]
 
 [extra.footer]
