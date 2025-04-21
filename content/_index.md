@@ -1,6 +1,6 @@
 +++
-insert_anchor_links = "left"
 title = "Home"
+page_template = "article.html"
 +++
 
 {% crt() %}
@@ -21,8 +21,14 @@ title = "Home"
 {% end %}
 
 
-# Section 1
+# PRODUCTS
 
-# Section 2
+# ABOUT US
 
-# Section 3
+# OUR CUSTOMERS
+
+# NEWS
+
+# RECRUIT
+
+# CONTACT
