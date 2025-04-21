@@ -19,5 +19,3 @@ title = "Home"
 ```
 {% end %}
 
-
-![about](about.png)
