@@ -1,6 +1,5 @@
 +++
 title = "Home"
-page_template = "article.html"
 +++
 
 {% crt() %}
@@ -19,16 +18,3 @@ page_template = "article.html"
     '---'       '─'                     GND
 ```
 {% end %}
-
-
-# PRODUCTS
-
-# ABOUT US
-
-# OUR CUSTOMERS
-
-# NEWS
-
-# RECRUIT
-
-# CONTACT
