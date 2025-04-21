@@ -38,20 +38,12 @@ bottom_footnotes = true
 # index_format = "elasticlunr_json"
 index_format = "fuse_json"
 
-
-
 [languages.fr]
 title = "Duckquill"
 description = "Un thème affirmé, moderne, beau et clair pour Zola."
 generate_feeds = true
 
 taxonomies = [{ name = "tags", feed = true }]
-
-
-
-
-
-
 
 [extra]
 # Which theme should be used by default (light/dark).
