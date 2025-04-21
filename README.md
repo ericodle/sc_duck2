@@ -1,24 +1,12 @@
 ```
-VCC ──┬──────┐       VCC ──┬──────┐       VCC ──┬──────┐
-      .▼.   .---------------------.       .▼.   .---------------------.       .▼.   .---------------------.
-      |C1|───|     MCU ATmega32    |── SDA ──┐       |C1|───|     MCU ATmega32    |── SDA ──┐       |C1|───|     MCU ATmega32    |── SDA ──┐
-      '─'    |   VCC  GND  A0  A1  |── SCL ──┤       '─'    |   VCC  GND  A0  A1  |── SCL ──┤       '─'    |   VCC  GND  A0  A1  |── SCL ──┤
-    .---.   '---------------------'         │     .---.   '---------------------'         │     .---.   '---------------------'         │
-    |R1|──┐                                 │     |R1|──┐                                 │     |R1|──┐                                 │
-    '---'  └──────┐                  .-----------.   '---'  └──────┐                  .-----------.   '---'  └──────┐                  .-----------.
-      GND         └──────────────────|  SRAM IC  |     GND         └──────────────────|  SRAM IC  |     GND         └──────────────────|  SRAM IC  |
-                                    '-----------'                     '-----------'                     '-----------'        
-    .---.       .---.                    ▲     .---.       .---.                    ▲     .---.       .---.                    ▲
-    |R2|── GND  |C2|── GND               │     |R2|── GND  |C2|── GND               │     |R2|── GND  |C2|── GND               │
-    '---'       '─'                     GND   '---'       '─'                     GND   '---'       '─'                     GND
 
-                            ┌──────────────────────────────────────────────────────────────────────────────────────────────┐
-                            |    SSSSS    PPPPP   AAAAA    CCCC    EEEE       CCCCC   U   U   BBBBB   III   CCCCC   SSSSS  |
-                            |   S         P    P  A     A  C       E          C       U   U   B    B   I   C       S       |
-                            |   SSSSS     PPPPP   AAAAAAA  C       EEEE       C       U   U   BBBBB    I   C       SSSSS   |
-                            |       S     P       A     A  C       E          C       U   U   B    B   I   C           S   |
-                            |   SSSSS     P       A     A  CCCCC   EEEEE      CCCCC   UUUU    BBBBB   III   CCCCC   SSSS   |
-                            └──────────────────────────────────────────────────────────────────────────────────────────────┘
+        ┌──────────────────────────────────────────────────────────────────────────────────────────────┐
+        |    SSSSS    PPPPP   AAAAA    CCCC    EEEE       CCCCC   U   U   BBBBB   III   CCCCC   SSSSS  |
+        |   S         P    P  A     A  C       E          C       U   U   B    B   I   C       S       |
+        |   SSSSS     PPPPP   AAAAAAA  C       EEEE       C       U   U   BBBBB    I   C       SSSSS   |
+        |       S     P       A     A  C       E          C       U   U   B    B   I   C           S   |
+        |   SSSSS     P       A     A  CCCCC   EEEEE      CCCCC   UUUU    BBBBB   III   CCCCC   SSSS   |
+        └──────────────────────────────────────────────────────────────────────────────────────────────┘
 
 ```
 
