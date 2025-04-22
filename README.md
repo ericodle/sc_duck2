@@ -1,5 +1,4 @@
 ```
-
 ┌──────────────────────────────────────────────────────────────────────────────────────────────┐
 |    SSSSS    PPPPP   AAAAA    CCCC    EEEE       CCCCC   U   U   BBBBB   III   CCCCC   SSSSS  |
 |   S         P    P  A     A  C       E          C       U   U   B    B   I   C       S       |
