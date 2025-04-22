@@ -1,31 +1,43 @@
-<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem; margin-top: 2rem;">
-    <div style="flex: 0 0 30%; min-width: 250px;">
-      <h2>{{ title }}</h2>
-      <p>{{ body | safe }}</p>
-      {% if link and link_text %}
-        <a href="{{ link }}" style="
-          display: inline-block;
-          margin-top: 1rem;
-          padding: 0.6rem 1.2rem;
-          background-color: #f97316; /* orange-500 */
-          color: white;
-          text-decoration: none;
-          border-radius: 9999px;
-          font-weight: 600;
-          transition: background-color 0.3s ease;
-        " onmouseover="this.style.backgroundColor='#ea580c'" onmouseout="this.style.backgroundColor='#f97316'">
-          {{ link_text }}
-        </a>
-      {% endif %}
-    </div>
-    <div style="flex: 0 0 60%; text-align: center; min-width: 250px;">
-      {% if img_link %}
-        <a href="{{ img_link }}">
-          <img src="{{ img }}" alt="{{ alt | default(value="image") }}" style="max-width: 100%; border-radius: 8px;" />
-        </a>
-      {% else %}
-        <img src="{{ img }}" alt="{{ alt | default(value="image") }}" style="max-width: 100%; border-radius: 8px;" />
-      {% endif %}
-    </div>
+<div style="
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-image: url('/{{ bg }}');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+">
+  <div style="flex: 0 0 30%; min-width: 250px;">
+    <h2>{{ title }}</h2>
+    <p>{{ body | safe }}</p>
+    {% if link and link_text %}
+      <a href="{{ link }}" style="
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.6rem 1.2rem;
+        background-color: #f97316;
+        color: white;
+        text-decoration: none;
+        border-radius: 9999px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+      " onmouseover="this.style.backgroundColor='#ea580c'" onmouseout="this.style.backgroundColor='#f97316'">
+        {{ link_text }}
+      </a>
+    {% endif %}
   </div>
-  
+  <div style="flex: 0 0 60%; text-align: center; min-width: 250px;">
+    {% if img_link %}
+      <a href="{{ img_link }}">
+        <img src="{{ img }}" alt="{{ alt | default(value="image") }}" style="max-width: 100%; border-radius: 8px;" />
+      </a>
+    {% else %}
+      <img src="{{ img }}" alt="{{ alt | default(value="image") }}" style="max-width: 100%; border-radius: 8px;" />
+    {% endif %}
+  </div>
+</div>
