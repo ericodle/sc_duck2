@@ -47,3 +47,9 @@ This project showcases how microcontrollers interact with memory and peripheral 
 This project showcases how microcontrollers interact with memory and peripheral components using I2C communication.
 
 {% end %}
+
+{% news_carousel() %}
+~render~
+{% end %}
+
+
