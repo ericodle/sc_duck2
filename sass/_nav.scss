@@ -181,12 +181,6 @@
 					color: var(--contrast-color);
 				}
 			}
-			
-		.company-logo {
-			height: 2rem; 
-			width: auto;
-			vertical-align: middle; 
-			}
 		}
 
 		#contact a {
@@ -499,3 +493,26 @@
 		}
 	}
 }
+
+.company-logo {
+	all: unset;
+	display: block;
+	width: 150px; /* Set the size of the logo (adjust as needed) */
+	height: auto; /* Keep the aspect ratio */
+	transform: none;
+	transition: none;
+	pointer-events: auto;
+	border: none;
+	outline: none;
+	box-shadow: none;
+  }
+  
+  #home .company-logo:hover {
+	box-shadow: none;
+	transform: none;
+	transition: none;
+	border: none;
+	outline: none;
+  }
+  
+  
