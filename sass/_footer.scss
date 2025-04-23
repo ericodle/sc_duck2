@@ -75,11 +75,10 @@
         flex-wrap: wrap;
         justify-content: flex-end;
         gap: 0.5rem;
-        margin: 1rem auto 0;
-        padding: 10px 10px;
+        margin: 2rem;
 
         li {
-            margin: 0;
+            margin: 1rem;
             padding: 0;
             list-style: none;
         }
@@ -89,8 +88,9 @@
             transition: var(--transition);
             border-radius: 999px;
             padding: 0.5rem;
-            color: gray; /* Change to gray */
+            color: rgb(58, 55, 90); /* Change to gray */
             line-height: 0;
+            padding-right: 1rem; /* Add padding to the right for more spacing */
 
             &:hover {
                 box-shadow: var(--edge-highlight);
@@ -106,8 +106,8 @@
                 -webkit-mask-image: var(--icon);
                 mask-image: var(--icon);
                 transition: var(--transition);
-                width: 2rem; /* Increased icon size */
-                height: 2rem; /* Increased icon size */
+                width: 2.5rem; /* Increased icon size */
+                height: 2.5rem; /* Increased icon size */
             }
 
             span {
