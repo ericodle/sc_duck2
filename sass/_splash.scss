@@ -4,7 +4,6 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  height: 100vh;
   background-color: transparent;
   padding: 0;
   margin: 0;
@@ -26,7 +25,7 @@
   flex-direction: column;
   justify-content: space-between; /* Distribute evenly */
   align-items: flex-end;
-  width: 350px;
+  width: 450px;
   margin-right: 3rem;
   height: 65vh; /* Approximate to match big text height */
 }
