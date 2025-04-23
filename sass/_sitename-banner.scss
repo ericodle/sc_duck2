@@ -1,0 +1,43 @@
+.sitename-banner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  padding: 0 2rem;
+  margin: 0;
+  position: relative;
+}
+
+.sitename-text {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.space {
+  color: black;
+}
+
+.cubics {
+  color: transparent;
+  -webkit-text-stroke: 2px black; /* Creates the black outline */
+  text-stroke: 2px black; /* For standard browsers */
+}
+
+.slash {
+  color: black; /* Solid black color for the slash */
+  margin: 0 0.3rem; /* Adds spacing around the slash */
+}
+
+@media (max-width: 768px) {
+  .sitename-banner {
+    height: 120px;
+  }
+
+  .sitename-text {
+    font-size: 3rem; /* Adjusted for mobile */
+  }
+}
