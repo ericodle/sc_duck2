@@ -1,7 +1,11 @@
 .section-title-block {
     background-size: cover;
     background-position: center;
-    padding: 3rem 2rem;
+    padding: 1rem 2rem;
+
+    margin-bottom: -15rem; /* overlap the next section */
+    position: relative;
+    z-index: 1;
   }
   
   .section-title-content {

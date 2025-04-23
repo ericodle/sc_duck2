@@ -10,16 +10,30 @@ title = "Home"
 ~render~
 {% end %}
 
+{% section_title(bg="images/bg.jpg", title="PRODUCT", subtitle="This is a subtitle", slogan="Your slogan here") %}
+~render~
+{% end %}
+
 {% twocol(title="SC-OBC Module A1", img="product1.png", alt="Diagram", link="products", link_text="Read More", img_link="product1.png", bg="") %}
 小型衛星向け <br>
 宇宙用コンピュータモジュール 
 {% end %}
 
-{% twocol(title="ABOUT US", img="", alt="", link="about_us", link_text="Read More", img_link="", bg="about.png") %}
+
+{% section_title(bg="images/bg.jpg", title="ABOUT US", subtitle="This is a subtitle", slogan="Your slogan here") %}
+~render~
+{% end %}
+
+{% twocol(title="", img="", alt="", link="about_us", link_text="Read More", img_link="", bg="about.png") %}
 私たちspace cubicsは <br>
 「誰もが月に行ける時代」を目指し、<br>
 安価で信頼性の高い宇宙用コンピュータを開発する<br>
 JAXAのベンチャーです。
+{% end %}
+
+
+{% section_title(bg="images/bg.jpg", title="Main Title", subtitle="This is a subtitle", slogan="Your slogan here") %}
+~render~
 {% end %}
 
 {% twocol(title="", img="partners.png", alt="Diagram", link="partners", link_text="Read More", img_link="partners.png", bg="") %}
@@ -32,7 +46,7 @@ JAXAのベンチャーです。
 {% end %}
 
 {% section_title(bg="images/bg.jpg", title="Main Title", subtitle="This is a subtitle", slogan="Your slogan here") %}
-sss
+~render~
 {% end %}
 
 {% news_carousel() %}
