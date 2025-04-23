@@ -1,0 +1,48 @@
+.splash {
+  display: flex;
+  justify-content: flex-end;  /* Align content to the right */
+  align-items: center;
+  height: 100vh;  /* Full height of the viewport */
+  background-color: transparent;  /* Transparent background */
+  position: relative;
+  overflow: hidden;  /* Ensure the text is clipped on the right side */
+}
+
+.splash-content {
+  text-align: left;  /* Align text to the left */
+  display: flex;
+  justify-content: flex-end;  /* Align content to the right */
+  align-items: center;
+  position: relative;
+  width: 100%;  /* Take up full width */
+  padding-right: 5rem;  /* Add some space to the right side */
+  overflow: hidden;  /* Clip anything that overflows */
+}
+
+.big-text {
+  font-size: 20rem;  /* Make the text significantly larger */
+  font-weight: bold;
+  color: black;
+  white-space: nowrap;  /* Prevent the text from wrapping */
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding-right: 5rem;  /* Add some padding on the right to make sure text is clipped */
+}
+
+.big-text span {
+  display: block;  /* Each word on a new line */
+}
+
+/* Clipping effect: create the "cut-off" effect on the right side */
+.big-text::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: transparent;
+  width: 25%;  /* Adjust this width to control the cut-off effect */
+  height: 100%;
+  z-index: 2;  /* Ensure it overlaps the text */
+}
