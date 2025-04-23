@@ -2,47 +2,51 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: transparent;
   position: relative;
   overflow: hidden;
+  height: 100vh;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
 
 .splash-content {
   display: flex;
-  justify-content: flex-start; /* Align both sections in a row */
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 100%; /* Take up the full height of the container */
-  padding-right: 0;
-  margin-left: 45%; /* Shift the content to the right further */
+  height: 100%;
   overflow: hidden;
+  margin-left: 45%;
+  padding: 0;
 }
 
 .small-elements {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 100%; /* Span full height of the text block */
-  margin-right: 3rem; /* Space between the small elements and big text */
-  position: relative;
-  top: 20%; /* Adjust to shift them vertically down */
+  justify-content: space-between; /* Distribute evenly */
+  align-items: flex-end;
+  width: 350px;
+  margin-right: 3rem;
+  height: 65vh; /* Approximate to match big text height */
 }
 
 .small-element {
-  text-align: right; /* Align text to the right */
-  margin-bottom: 0.5rem; /* Reduce the space between each element */
+  text-align: right;
+  width: 100%;
 }
 
 .gray-text {
   font-size: 1rem;
   color: gray;
+  margin: 0;
 }
 
 .black-text {
   font-size: 1.2rem;
   color: black;
   font-weight: bold;
+  margin: 0.1rem 0 0 0;
 }
 
 .divider {
@@ -50,7 +54,8 @@
   width: 30%;
   background-color: black;
   margin-top: 0.5rem;
-  margin-left: auto; 
+  margin-left: auto; /* Right-align the divider */
+  flex-shrink: 0;
 }
 
 .big-text {
@@ -64,9 +69,9 @@
   display: inline-block;
   position: relative;
   z-index: 1;
-  margin-right: -25%; /* Overlap text */
-  padding-right: 50%; /* Push text far enough to be clipped */
-  line-height: 1.1; /* Reduce the line-height to bring text closer */
+  margin-right: -25%;
+  padding-right: 50%;
+  line-height: 1.1;
 }
 
 .big-text span {
@@ -78,5 +83,8 @@
   position: absolute;
   background: transparent;
   width: 33%;
+  height: 100%;
   z-index: 2;
+  right: 0;
+  top: 0;
 }
