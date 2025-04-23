@@ -1,6 +1,38 @@
 {%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 
 <footer id="site-footer">
+    <div class="footer-content">
+        <!-- Company Logo Section -->
+        <div class="footer-logo">
+            <a href="/">
+                <img src="logo_black.webp" alt="{{ config.title }} Logo">
+            </a>
+        </div>
+
+        <!-- Social Icons Section -->
+        {%- if config.extra.footer.socials %}
+            <ul id="socials">
+                {%- for link in config.extra.footer.socials %}
+                    <li>
+                        <a href="{{ link.url | safe }}" rel="{{ rel_attributes }} me" title="{{ link.name }}">
+                            <i class="icon" style='--icon: url("data:image/svg+xml,{{ link.icon }}")'></i>
+                            <span>{{ link.name }}</span>
+                        </a>
+                    </li>
+                {%- endfor %}
+            </ul>
+        {%- endif %}
+    </div>
+
+    <!-- Gray Divider -->
+    <div class="footer-divider"></div>
+
+    <!-- Copyright Text -->
+    <p class="copyright-text">
+        &copy; {{ config.title }}, {{ now() | date(format="%Y") }}
+    </p>
+
+    <!-- Additional Footer Content (Links, Source, Powered by) -->
     {%- if config.extra.footer.links %}
         <nav>
             <ul>
@@ -49,28 +81,6 @@
                 {%- set duckquill_link = '<a class="link external" href="https://duckquill.daudix.one" rel="' ~ rel_attributes ~ '">Duckquill</a>' -%}
                 {{ macros_translate::translate(key="powered_by", default="Powered by $ZOLA and $DUCKQUILL", language_strings=language_strings) | replace(from="$ZOLA", to=zola_link) | replace(from="$DUCKQUILL", to=duckquill_link) | safe }}
             </small>
-        </p>
-    {%- endif %}
-
-    {%- if config.extra.footer.socials %}
-        <!-- Social Icons Section -->
-        <ul id="socials">
-            {%- for link in config.extra.footer.socials %}
-                <li>
-                    <a href="{{ link.url | safe }}" rel="{{ rel_attributes }} me" title="{{ link.name }}">
-                        <i class="icon" style='--icon: url("data:image/svg+xml,{{ link.icon }}")'></i>
-                        <span>{{ link.name }}</span>
-                    </a>
-                </li>
-            {%- endfor %}
-        </ul>
-
-        <!-- Gray Divider -->
-        <div class="footer-divider"></div>
-
-        <!-- Copyright Text -->
-        <p class="copyright-text">
-            &copy; {{ config.title }}, {{ now() | date(format="%Y") }}
         </p>
     {%- endif %}
 </footer>
