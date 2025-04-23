@@ -12,7 +12,8 @@ title = "Home"
 
 
 {% twocol(title="SC-OBC Module A1", img="product1.png", alt="Diagram", link="products", link_text="Read More", img_link="product1.png", bg="") %}
-This project showcases how microcontrollers interact with memory and peripheral components using I2C communication.
+小型衛星向け <br>
+宇宙用コンピュータモジュール 
 {% end %}
 
 {% twocol(title="ABOUT US", img="", alt="", link="about_us", link_text="Read More", img_link="", bg="about.png") %}
