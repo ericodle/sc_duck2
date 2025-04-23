@@ -10,7 +10,6 @@ title = "Home"
 ~render~
 {% end %}
 
-
 {% twocol(title="SC-OBC Module A1", img="product1.png", alt="Diagram", link="products", link_text="Read More", img_link="product1.png", bg="") %}
 小型衛星向け <br>
 宇宙用コンピュータモジュール 
@@ -23,8 +22,6 @@ title = "Home"
 JAXAのベンチャーです。
 {% end %}
 
-
-
 {% twocol(title="", img="partners.png", alt="Diagram", link="partners", link_text="Read More", img_link="partners.png", bg="") %}
 私たちは、これからの未来を切り拓く <br>
 宇宙事業やテクノロジーといった <br>
@@ -32,6 +29,10 @@ JAXAのベンチャーです。
 <br>
 革新的な技術や最先端のアイデアを持つ企業と協力し、 <br>
 持続可能な成長を支援することが 私たちの使命です。<br>
+{% end %}
+
+{% section_title(bg="images/bg.jpg", title="Main Title", subtitle="This is a subtitle", slogan="Your slogan here") %}
+sss
 {% end %}
 
 {% news_carousel() %}
