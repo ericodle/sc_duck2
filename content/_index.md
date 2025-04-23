@@ -3,7 +3,7 @@ title = "Home"
 +++
 
 {% splash() %}
-<span>space</span> <span>cubics</span>
+text here
 {% end %}
 
 
