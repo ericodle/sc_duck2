@@ -45,9 +45,6 @@ JAXAのベンチャーです。
 持続可能な成長を支援することが 私たちの使命です。<br>
 {% end %}
 
-{% section_title(bg="images/bg.jpg", title="Main Title", subtitle="This is a subtitle", slogan="Your slogan here") %}
-~render~
-{% end %}
 
 {% news_carousel() %}
 ~render~
