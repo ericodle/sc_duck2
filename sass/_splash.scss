@@ -16,44 +16,48 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  margin-left: 45%;
+  margin-left: 35%;
   padding: 0;
 }
 
 .small-elements {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribute evenly */
-  align-items: flex-end;
-  width: 450px;
+  justify-content: space-between;
+  align-items: flex-end; /* Right-align the content */
+  width: 300px; /* Adjusted width to give more space */
   margin-right: 3rem;
-  height: 65vh; /* Approximate to match big text height */
+  height: 45vh;
+  text-align: right; /* Right-align text inside the container */
+  flex-shrink: 0; /* Prevent shrinking */
 }
 
 .small-element {
-  text-align: right;
+  text-align: right; /* Ensures text is right-aligned within each element */
   width: 100%;
 }
 
 .gray-text {
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: gray;
   margin: 0;
+  line-height: 1.4;
 }
 
 .black-text {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: black;
   font-weight: bold;
-  margin: 0.1rem 0 0 0;
+  margin: 0.2rem 0 0 0;
+  line-height: 1.4;
 }
 
 .divider {
   height: 2px;
-  width: 30%;
+  width: 10%;
   background-color: black;
   margin-top: 0.5rem;
-  margin-left: auto; /* Right-align the divider */
+  margin-left: auto; 
   flex-shrink: 0;
 }
 
@@ -68,8 +72,6 @@
   display: inline-block;
   position: relative;
   z-index: 1;
-  margin-right: -25%;
-  padding-right: 50%;
   line-height: 1.1;
 }
 
@@ -91,7 +93,7 @@
 /* Scroll Hint Styles */
 .scroll-hint {
   position: absolute;
-  left: 20rem; 
+  left: 18rem; 
   top: 50%;
   transform: translateY(-50%);
   color: white;
