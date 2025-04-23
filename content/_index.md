@@ -3,7 +3,7 @@ title = "Home"
 +++
 
 {% splash() %}
-text here
+~render~
 {% end %}
 
 
