@@ -2,11 +2,18 @@
 
 <footer id="site-footer">
     <div class="footer-content">
-        <!-- Company Logo Section -->
+        <!-- Company Logo + Info Section -->
         <div class="footer-logo">
             <a href="/">
                 <img src="logo_black.webp" alt="{{ config.title }} Logo">
             </a>
+            <div class="company-info">
+                <div class="company-name">合同会社Space Cubics</div>
+                <div class="company-address">
+                    〒060-0053 北海道札幌市中央区南3条東2丁目1番地<br>
+                    ベンチャースクエア301
+                </div>
+            </div>
         </div>
 
         <!-- Social Icons Section -->
@@ -27,12 +34,12 @@
     <!-- Gray Divider -->
     <div class="footer-divider"></div>
 
-    <!-- Copyright Text -->
+    <!-- Copyright -->
     <p class="copyright-text">
         &copy; {{ config.title }}, {{ now() | date(format="%Y") }}
     </p>
 
-    <!-- Additional Footer Content (Links, Source, Powered by) -->
+    <!-- Navigation Links -->
     {%- if config.extra.footer.links %}
         <nav>
             <ul>
@@ -58,6 +65,7 @@
         </nav>
     {%- endif %}
 
+    <!-- Optional Copyright -->
     {%- if config.extra.footer.show_copyright %}
         {%- if config.extra.footer.copyright %}
             {{ config.extra.footer.copyright | markdown | safe }}
@@ -66,6 +74,7 @@
         {%- endif %}
     {%- endif %}
 
+    <!-- Optional Source Link -->
     {%- if config.extra.source_url and config.extra.footer.show_source %}
         <p>
             <a class="external" href="{{ config.extra.source_url }}" rel="{{ rel_attributes }}">
@@ -74,6 +83,7 @@
         </p>
     {%- endif %}
 
+    <!-- Powered by -->
     {%- if config.extra.footer.show_powered_by %}
         <p>
             <small>

@@ -16,20 +16,43 @@
         justify-content: space-between;
         width: 100%;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .footer-logo {
-        flex-shrink: 0;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin-right: auto;
-        padding-left: 7rem;
-    }
+		flex-shrink: 0;
+		display: flex;
+		flex-direction: column; /* stack children vertically */
+		justify-content: center;
+		align-items: flex-start; /* align to the left under logo */
+		margin-right: auto;
+		padding-left: 7rem;
+		gap: 1rem;
+	}
 
     .footer-logo img {
         max-height: 100px;
         width: auto;
+    }
+
+    .company-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 400px;
+        text-align: left;
+    }
+
+    .company-name {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: black;
+    }
+
+    .company-address {
+        font-size: 0.875rem;
+        color: #666;
+        line-height: 1.4;
     }
 
     nav {
@@ -171,6 +194,28 @@
 
         &:active {
             transform: var(--active);
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .footer-logo {
+            padding-left: 2rem;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .company-info {
+            align-items: center;
+            text-align: center;
+        }
+
+        .copyright-text {
+            text-align: center;
+            padding-left: 0;
+        }
+
+        #socials {
+            justify-content: center;
         }
     }
 }
