@@ -2,7 +2,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 100vh;
   background-color: transparent;
   position: relative;
   overflow: hidden;
@@ -51,7 +50,7 @@
   width: 30%;
   background-color: black;
   margin-top: 0.5rem;
-  margin-left: auto; /* Pushes the divider to the right */
+  margin-left: auto; 
 }
 
 .big-text {
@@ -72,16 +71,12 @@
 
 .big-text span {
   display: block;
-  margin-bottom: -0.2rem; /* Reduce space between the two spans */
 }
 
 .big-text::after {
   content: '';
   position: absolute;
-  right: 0;
-  top: 0;
   background: transparent;
-  width: 33%; /* Clip right side of text */
-  height: 100%;
+  width: 33%;
   z-index: 2;
 }
