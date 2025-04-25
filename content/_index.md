@@ -10,7 +10,7 @@ title = "Home"
 ~render~
 {% end %}
 
-{% section_title(bg="images/bg.jpg", title="PRODUCT", subtitle="This is a subtitle", slogan="Your slogan here") %}
+{% section_title(bg="images/bg.jpg", title="PRODUCT", subtitle="Make the impossible", slogan="POSSIBLE") %}
 ~render~
 {% end %}
 
@@ -20,7 +20,7 @@ title = "Home"
 {% end %}
 
 
-{% section_title(bg="images/bg.jpg", title="ABOUT US", subtitle="This is a subtitle", slogan="Your slogan here") %}
+{% section_title(bg="images/bg.jpg", title="ABOUT US", subtitle="To drink beer", slogan="ON THE MOON") %}
 ~render~
 {% end %}
 
@@ -32,7 +32,7 @@ JAXAのベンチャーです。
 {% end %}
 
 
-{% section_title(bg="images/bg.jpg", title="Main Title", subtitle="This is a subtitle", slogan="Your slogan here") %}
+{% section_title(bg="images/bg.jpg", title="PARTNERS", subtitle="Our mission is to support", slogan="SPACE COMPUTING") %}
 ~render~
 {% end %}
 
@@ -45,6 +45,10 @@ JAXAのベンチャーです。
 持続可能な成長を支援することが 私たちの使命です。<br>
 {% end %}
 
+
+{% section_title(bg="images/bg.jpg", title="NEWS", subtitle="Check out what is", slogan="NEW WITH US") %}
+~render~
+{% end %}
 
 {% news_carousel() %}
 ~render~
