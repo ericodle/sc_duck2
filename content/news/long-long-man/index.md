@@ -6,7 +6,7 @@ date = 2017-01-01
 [taxonomies]
 tags = ["Honorificabilitudinitatibus"]
 [extra]
-featured = true
+featured = false
 +++
 
 ![Long Long Man](https://upload.wikimedia.org/wikipedia/en/e/ed/Long_Long_Man.jpeg#end#spoiler)
