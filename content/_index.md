@@ -46,7 +46,7 @@ JAXAのベンチャーです。
 {% end %}
 
 
-{% section_title(bg="images/bg.jpg", title="NEWS", subtitle="Check out what is", slogan="NEW WITH US") %}
+{% section_title(bg="images/bg.jpg", title="NEWS", subtitle="Read about our current", slogan="UPDATES") %}
 ~render~
 {% end %}
 
