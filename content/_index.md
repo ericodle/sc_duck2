@@ -56,5 +56,13 @@ JAXAのベンチャーです。
 技術の進歩に専念しています。<br>
 {% end %}
 
-
-
+{% twocard(
+  title="",
+  left_card_image="earth.png", 
+  right_card_image="earth.png",
+  link="partners", 
+  link_text="Read More", 
+  bg=""
+) %}
+~render~
+{% end %}

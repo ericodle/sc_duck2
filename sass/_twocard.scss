@@ -1,0 +1,32 @@
+.section {
+    padding: 10px; 
+    background-color: transparent;
+    color: white;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px; /* Large gap between the cards */
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1;
+}
+
+.two-card {
+    height: 300px; /* Card height */
+    border-radius: 50px; /* Rounded corners */
+    background-size: cover; /* Ensure the image covers the entire card */
+    background-position: center; /* Position the image in the center */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.left-card {
+    /* Any additional styling specific to the left card */
+}
+
+.right-card {
+    /* Any additional styling specific to the right card */
+}
