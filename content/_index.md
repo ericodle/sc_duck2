@@ -46,12 +46,15 @@ JAXAのベンチャーです。
 {% end %}
 
 
-{% section_title(bg="images/bg.jpg", title="NEWS", subtitle="Read about our current", slogan="UPDATES") %}
+{% section_title(bg="images/bg.jpg", title="NEWS", subtitle="Our advancements in space computing are", slogan="REGULARLY UPDATED") %}
 ~render~
 {% end %}
 
-{% news_carousel() %}
-~render~
+{% twocol(title="", img="latestnews.png", alt="Diagram", link="partners", link_text="Read More", img_link="partners.png", bg="") %}
+スペースコンピューティングの最新情報をお届けします！ <br>
+私たちのチームは、宇宙探査に力を与える <br>
+技術の進歩に専念しています。<br>
 {% end %}
+
 
 
