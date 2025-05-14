@@ -1,5 +1,5 @@
 .section {
-    padding: 10px; 
+    padding: 10px;
     background-color: transparent;
     color: white;
 }
@@ -7,7 +7,7 @@
 .columns {
     display: flex;
     justify-content: space-between;
-    gap: 60px; /* Large gap between the cards */
+    gap: 60px;
     margin-bottom: 20px;
 }
 
@@ -16,17 +16,61 @@
 }
 
 .two-card {
-    height: 300px; /* Card height */
-    border-radius: 50px; /* Rounded corners */
-    background-size: cover; /* Ensure the image covers the entire card */
-    background-position: center; /* Position the image in the center */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
-}
-
-.left-card {
-    /* Any additional styling specific to the left card */
+    height: 400px;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .right-card {
-    /* Any additional styling specific to the right card */
+    background-color: rgb(51, 48, 48); /* Set the background color to gray */
+    border: 3px solid white; /* Add a white border around the card */
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #f97316;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.circle-btn:hover {
+    transform: scale(1.1);
+}
+
+.circle-btn::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 18px solid white; /* Elongate the arrow horizontally */
+    border-top: 6px solid transparent; /* Arrow shape */
+    border-bottom: 6px solid transparent; /* Arrow shape */
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%) rotate(0deg); /* Positioning and rotation */
 }
