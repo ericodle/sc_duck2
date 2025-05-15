@@ -4,101 +4,69 @@ description = "We need someone to do the job."
 date = 2023-08-31
 updated = "2024-06-21"
 [taxonomies]
-tags = ["architecture", "structures"]
-[extra]
-toc = true
-toc_inline = true
-toc_ordered = true
-trigger = "This page contains blackjack and hookers, and bad jokes such as this one."
-disclaimer = """
-- All tricks in this page are performed by the lab boys, don't try this at home.
-- Don't expose yourself to 4000° kelvin.
-- Don't take party escort submission position.
-- Don't interact with asbestos and moon rocks.
-"""
-[extra.comments]
-# Long thread with image
-#
-# host = "mastodon.social"
-# user = "brownpau"
-# id = "104529877688537579"
-#
-# Thread with multiple images per post
-#
-# host = "mastodon.blaede.family"
-# user = "cassidy"
-# id = "112774854109302186"
-#
-# Thread with preview cards
-# host = "mastodon.blaede.family"
-# user = "cassidy"
-# id = "110669429936617026"
-#
-# Post on GoToSocial
-#
-# host = "alpha.polymaths.social"
-# user = "orbitalmartian"
-# id = "01J7ETKJ19FGBDQGS1ZWZ3KEPP"
-#
-# Post on Sharkey
-#
-# host = "is-a.wyvern.rip"
-# user = "volpeon"
-# id = "9qy755nsnu2c0hbc"
-host = "toot.community"
-user = "sungsphinx"
-id = "111789185826519979"
+tags = ["files", "pens"]
 +++
 
-{% alert(tip=true) %}
-Recommended banner dimensions are 2:1 aspect ratio and 1920x960 resolution.  
-Other sizes will also work, but will be cut off at the bottom/won't be high enough.
-{% end %}
+募集中
+ソフトウェアエンジニア
+勤務地：本社（日本国内のみリモート勤務可）
 
-## The what?
 
-This is a Duckquill post example, this post has nothing but a bunch of text and random formatting, acting like a demo.
 
-## Some info
+雇用形態：正社員・契約社員・業務委託（副業・兼業なども可）
 
-Well, open this file and look at how it's made, it includes all the essential front matter stuff.
 
-Now to the _Stanley!_
 
-## The _Stanley_!
+業務内容：
 
-This is the story of a man named _Stanley_.
+現在開発中のCubesatに搭載するソフトウェアの開発
+Zephyr用デバイスドライバ開発
+通信プロトコルスタック開発
+アプリケーション開発
+テスト環境開発
 
-_Stanley_ worked for a company in a big building where he was Employee `#427`.
 
-<figure>
+応募条件（必須）：
 
-![The Office](the-office.webp)
-<figcaption>The Office where Stanley works, it has yellow floor and beige walls</figcaption>
-</figure>
+スキルを正確に把握するため、過去に製作したソフトウェアコード等、ポートフォリオを送付願います。 GitHubアカウント名など、公開しているソフトウェアのアカウントでも構いません。
+日本国籍の方または日本の永住権のある外国籍の方
 
-Employee `#427`'s job was simple: he sat at his desk in Room `427` and he pushed buttons on a keyboard.
 
-Orders came to him through a monitor on his desk telling him what buttons to push, how long to push them, and in what order.
+求める人材：
 
-This is what Employee `#427` did every day of every month of every year, and although others may have considered it soul rending,
+お客様の気持ちになって企画・設計・開発ができること
+要求仕様を理解して設計から試験まで一通りできること
+作業中のレイヤーの一段下まで理解した上で開発できること
+自分で書いたすべてのソースコードの行の意味を説明できること
+自分のわからない箇所を適切に説明できること
+ハードウェアを理解してCを書けること (デバイスドライバ開発の場合)
+当社の開発は「宇宙」をテーマにしており、通常の組み込み系の開発では想定しない未経験・未知の分野への対応が求められます。そのため、日頃自分の分からない分野でも調べながら辛抱強く最適解を求めるような忍耐力や熱意のある方がマッチすると思います。
 
-_Stanley_ relished every moment that the orders came in, as though he had been made exactly for this job.
 
-And _Stanley_ was happy.
+歓迎するスキル・経験：
 
-And then one day, something very peculiar happened.
+英語によるコミュニケーション能力
+組み込み系のソフトウェアの開発経験
+組み込みLinux (Device Driver, アプリケーション)の開発経験  
+Real-Time OS (Device Driver, アプリケーション) の開発経験
+Bare metalの開発経験
+量産品の開発経験
+自社製品の開発経験
+車載またはSafety-criticalシステムの開発経験
+人工衛星など「宇宙」に関連する業務の経験
+オープンソースコミュニティの経験
 
-Something that would forever change _Stanley_;
 
-Something he would never quite forget.
+待遇：
 
-He had been at his desk for nearly an hour when he had realized not one single order had arrived on the monitor for him to follow.
+年俸制 (年収想定: 600万 〜 1000万程度)※報酬は応募者のスキル・経験を考慮して決定
+所定労働時間8時間
+フレックスタイム制（コアタイムあり）
+完全週休二日制、夏季休暇、年末年始休暇、慶弔休暇、有給休暇
+各種社会保険（健康保険、厚生年金、雇用保険、労災保険）
+通勤手当
 
-No one had shown up to give him instructions, call a meeting, or even say 'hi'. Never in all his years at the company had this happened, this complete isolation.
 
-Something was very clearly wrong. Shocked, frozen solid, _Stanley_ found himself unable to move for the longest time.
+特記事項：
 
-But as he came to his wits and regained his senses, he got up from his desk and stepped out of his office.
-
-All of his co-workers were gone. What could it mean? Stanley decided to go to the meeting room; perhaps he had simply missed a memo.
+募集中以外の職種に関しては、お問合せフォームよりお問合せ願います。 
