@@ -50,7 +50,7 @@ JAXAのベンチャーです。
 ~render~
 {% end %}
 
-{% twocol(title="", img="", alt="", link="partners", link_text="Read More", img_link="", bg="products_banner_lowwhite.jpeg") %}
+{% twocol(title="", img="", alt="", link="news", link_text="Read More", img_link="", bg="products_banner_lowwhite.jpeg") %}
 スペースコンピューティングの最新情報をお届けします！ <br>
 私たちのチームは、宇宙探査に力を与える <br>
 技術の進歩に専念しています。<br>
