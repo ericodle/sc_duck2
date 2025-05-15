@@ -1,13 +1,11 @@
 +++
-authors = ["Scrooge McDuck", "Darkwing Duck"]
-title = "The Quill of Duck"
-description = "This is a Duckquill post example, this post has nothing but a bunch of text and random formatting, acting like a demo."
+title = "Business Worker"
+description = "We need someone to do the job."
 date = 2023-08-31
 updated = "2024-06-21"
 [taxonomies]
-tags = ["Demo", "Test"]
+tags = ["files", "pens"]
 [extra]
-banner = "banner.webp"
 toc = true
 toc_inline = true
 toc_ordered = true

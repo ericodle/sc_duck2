@@ -1,10 +1,9 @@
 +++
-authors = ["Looong Looong Man", "Alexander Maximilian Jonathan"]
-title = "Loooooong Loooooong Loooooong Loooooong Loooooong Man"
-description = "Pneumonoultramicroscopicsilicovolcanoconiosis supercalifragilisticexpialidocious pseudopseudohypoparathyroidism."
+title = "Hardware Engineer"
+description = "We really need someone to do the job."
 date = 2017-01-01
 [taxonomies]
-tags = ["Honorificabilitudinitatibus"]
+tags = ["fpga master", "cortex M3 master"]
 [extra]
 featured = false
 +++
