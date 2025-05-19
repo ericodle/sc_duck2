@@ -1,0 +1,71 @@
+<div class="threecard-section" style="background-color: {{ bg | default(value="transparent") }}">
+  <!-- Title & Subtitle -->
+  <div class="threecard-section__header-text">
+    <h1 class="threecard-section__header-text__main-title">{{ title }}</h1>
+    <p class="threecard-section__header-text__main-subtitle" style="white-space: pre-line;">
+      {{ subtitle }}
+    </p>
+  </div>
+
+  <!-- Cards Container -->
+  <div class="threecard-section__columns">
+
+    <!-- Left Card -->
+    <div class="threecard-section__columns__column">
+      <div class="threecard-section__columns__card-left" style="background-image: url('{{ left_card_image }}');">
+        <div class="threecard-section__columns__card-left__content">
+          <h2>{{ left_card_title }}</h2>
+          <p>{{ left_card_subtitle }}</p>
+        </div>
+        <div class="threecard-section__columns__card-left__footer-text">
+          <p>{{ left_card_footer_line1 }}</p>
+          <p>{{ left_card_footer_line2 }}</p>
+        </div>
+        {% if left_card_link and left_card_link_text %}
+          <div class="threecard-section__columns__card-left__btn-container">
+            <a href="{{ left_card_link }}" class="threecard-link-btn">{{ left_card_link_text }}</a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Middle Card -->
+    <div class="threecard-section__columns__column">
+      <div class="threecard-section__columns__card-middle" style="background-image: url('{{ middle_card_image }}');">
+        <div class="threecard-section__columns__card-middle__content">
+          <h2>{{ middle_card_title }}</h2>
+          <p>{{ middle_card_subtitle }}</p>
+        </div>
+        <div class="threecard-section__columns__card-middle__footer-text">
+          <p>{{ middle_card_footer_line1 }}</p>
+          <p>{{ middle_card_footer_line2 }}</p>
+        </div>
+        {% if middle_card_link and middle_card_link_text %}
+          <div class="threecard-section__columns__card-middle__btn-container">
+            <a href="{{ middle_card_link }}" class="threecard-link-btn">{{ middle_card_link_text }}</a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Right Card -->
+    <div class="threecard-section__columns__column">
+      <div class="threecard-section__columns__card-right" style="background-image: url('{{ right_card_image }}');">
+        <div class="threecard-section__columns__card-right__content">
+          <h2>{{ right_card_title }}</h2>
+          <p>{{ right_card_subtitle }}</p>
+        </div>
+        <div class="threecard-section__columns__card-right__footer-text">
+          <p>{{ right_card_footer_line1 }}</p>
+          <p>{{ right_card_footer_line2 }}</p>
+        </div>
+        {% if right_card_link and right_card_link_text %}
+          <div class="threecard-section__columns__card-right__btn-container">
+            <a href="{{ right_card_link }}" class="threecard-link-btn">{{ right_card_link_text }}</a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+  </div>
+</div>
