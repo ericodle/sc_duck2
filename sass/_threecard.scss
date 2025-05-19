@@ -4,95 +4,91 @@
   margin-top: 4rem;
   margin-bottom: 4rem;
   position: relative;
+}
 
-  &__header-text {
-    background-color: transparent !important;
-    text-align: center;
-    margin-bottom: 2.5rem;
+.threecard-section__header-text {
+  background-color: transparent !important;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
 
-    &__main-title,
-    &__main-subtitle {
-      background-color: transparent !important;
-      color: white;
-      margin: 0;
-      line-height: 1.1;
-    }
+.threecard-section__header-text__main-title,
+.threecard-section__header-text__main-subtitle {
+  background-color: transparent !important;
+  color: white;
+  margin: 0;
+  line-height: 1.1;
+}
 
-    &__main-title {
-      font-size: 3rem;
-    }
+.threecard-section__header-text__main-title {
+  font-size: 3rem;
+}
 
-    &__main-subtitle {
-      font-size: 1.25rem;
-      margin-top: 0.5rem;
-      line-height: 1.3;
-    }
-  }
+.threecard-section__header-text__main-subtitle {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  line-height: 1.3;
+  white-space: pre-line;
+}
 
-  &__columns {
-    display: flex;
-    gap: 1.5rem;
+.threecard-section__columns {
+  display: flex;
+  gap: 1.5rem;
+}
 
-    &__column {
-      flex: 1;
-      min-width: 0;
-    }
+.threecard-section__columns__column {
+  flex: 1;
+  min-width: 0;
+}
 
-    &__card-left,
-    &__card-middle,
-    &__card-right {
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 1.5rem;
-      border-radius: 16px;         /* Rounded corners */
-      border: 2px solid white;     /* White outline */
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 300px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-      overflow: hidden;
-      background-color: transparent !important;
+.threecard-section__columns__card-left,
+.threecard-section__columns__card-middle,
+.threecard-section__columns__card-right {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  background-color: transparent !important;
+}
 
-      &__content {
-        text-align: left;  /* Left align text inside cards */
+.threecard-section__columns__card-left__content,
+.threecard-section__columns__card-middle__content,
+.threecard-section__columns__card-right__content {
+  text-align: left;
+}
 
-        h2 {
-          font-size: 2rem;       /* Large white title */
-          font-weight: 700;
-          color: white;
-          margin-bottom: 0.75rem;
-        }
+.threecard-section__columns__card-left__content h2,
+.threecard-section__columns__card-middle__content h2,
+.threecard-section__columns__card-right__content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.75rem;
+}
 
-        p {
-          font-size: 1.125rem;   /* Smaller white content text */
-          color: white;
-          opacity: 0.85;
-          margin-bottom: 1rem;
-          line-height: 1.4;
-        }
-      }
+.threecard-section__columns__card-left__content p,
+.threecard-section__columns__card-middle__content p,
+.threecard-section__columns__card-right__content p {
+  font-size: 1.125rem;
+  color: white;
+  opacity: 0.85;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  white-space: pre-line;
+}
 
-      &__footer-text {
-        text-align: left; /* Left align footer text */
-
-        p {
-          margin: 0;
-          font-size: 1rem;
-          color: white;
-          opacity: 0.85;
-          line-height: 1.4;
-        }
-      }
-
-      &__btn-container {
-        margin-top: 1rem;
-        display: flex;
-        justify-content: flex-start;
-
-        /* Removed .threecard-circle-btn styles */
-      }
-    }
-  }
+.threecard-section__columns__card-left__btn-container,
+.threecard-section__columns__card-middle__btn-container,
+.threecard-section__columns__card-right__btn-container {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-start;
 }

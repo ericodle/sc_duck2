@@ -16,25 +16,18 @@ title = ""
   left_card_image="earth.png",
   middle_card_image="mars.png",
   right_card_image="jupiter.png",
-  left_card_title="Left Card Title",
-  left_card_subtitle="Left card subtitle",
-  middle_card_title="Middle Card Title",
-  middle_card_subtitle="Middle card subtitle",
-  right_card_title="Right Card Title",
-  right_card_subtitle="Right card subtitle",
-  left_card_footer_line1="First line of footer text",
-  left_card_footer_line2="Second line of footer text",
-  middle_card_footer_line1="First line of footer text",
-  middle_card_footer_line2="Second line of footer text",
-  right_card_footer_line1="First line of footer text",
-  right_card_footer_line2="Second line of footer text",
-  left_card_link="left-link",
-  middle_card_link="middle-link",
-  right_card_link="right-link",
-  left_card_link_text="",
-  middle_card_link_text="",
-  right_card_link_text="",
+  left_card_title="もっと安く",
+  left_card_subtitle="宇宙用の機器は地上用に比べて、性能に加えて安全性や信頼性検証などの要求事項が多く、適合させるための開発コストが非常に高くなります。Space Cubicsは、これまで多くの宇宙での使用実績のある民生コンピューターの設計者と、宇宙開発の経験から培った多くの設計検証ノウハウを持つJAXAエンジニアがタッグを組み、「JAXAベンチャー」として信頼性の高い宇宙用コンピューターを安価に提供します。",
+  middle_card_title="もっと手軽に",
+  middle_card_subtitle="たとえ優れた技術があったとしても、宇宙開発の経験がない企業・団体にとって宇宙開発は簡単なものではありません。宇宙開発に興味はあっても、どこから手を付けて良いのか分からず、企画段階で頓挫してしまうケースが多く見受けられます。Space Cubicsは、宇宙に興味のある企業・団体が手軽に宇宙開発に参入できるように宇宙開発のトータルサポートを提供します。",
+  right_card_title="誰でも宇宙へ",
+  right_card_subtitle="Space Cubicsは低価格な宇宙用の機器とトータルサポートを提供することで、宇宙開発への参入を手軽にし、日本はもとよりアジアを中心とした民間の宇宙産業発展に貢献します。多くの企業や団体そして個人までもが宇宙開発に参入することにより、宇宙に対するニーズが飛躍的に拡大して新たな産業が生まれ育っていくこと、それがSpace Cubicsの設立目的です。",
+  left_card_subtitle_style="font-size: 30px;",
+  middle_card_subtitle_style="font-size: 30px;",
+  right_card_subtitle_style="font-size: 30px;",
   bg=""
 ) %}
 ~render~
 {% end %}
+
+
