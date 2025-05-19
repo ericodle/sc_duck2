@@ -30,4 +30,17 @@ title = ""
 ~render~
 {% end %}
 
+{% about_company    (
+  title="私たちのビジョン",
+  img="images/rocket.jpg",
+  alt="Rocket to the moon",
+  link="/vision",
+  link_text="もっと読む",
+  img_link="/gallery",
+  bg="images/about-bg.jpg"
+) %}
+誰もが月に行ける時代。私たちはその未来を築いています。
+{% end %}
+
+
 

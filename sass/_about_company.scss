@@ -1,0 +1,27 @@
+.about-company-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-size: cover;
+  padding: 2rem;
+  color: white;
+}
+
+.about-company-image {
+  flex: 1;
+  min-width: 250px;
+}
+
+.about-company-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.about-company-link-button {
+  color: orange;
+  font-weight: bold;
+  text-decoration: underline;
+}
