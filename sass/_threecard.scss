@@ -2,14 +2,14 @@
   background-color: transparent !important;
   padding: 3rem 2rem;
   margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
   position: relative;
 }
 
 .threecard-section__header-text {
   background-color: transparent !important;
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 12rem; /* more space between subtitle and cards */
 }
 
 .threecard-section__header-text__main-title,
@@ -17,18 +17,20 @@
   background-color: transparent !important;
   color: white;
   margin: 0;
-  line-height: 1.1;
+  line-height: 2;
 }
 
 .threecard-section__header-text__main-title {
-  font-size: 4rem; /* increased */
+  font-size: 6.5rem; /* bigger title */
+  font-weight: 800;
 }
 
 .threecard-section__header-text__main-subtitle {
-  font-size: 1.5rem; /* increased */
+  font-size: 2rem; /* bigger subtitle */
   margin-top: 0.5rem;
-  line-height: 1.2; /* less space between lines */
+  line-height: 1; /* reduced space between subtitle lines */
   white-space: pre-line;
+  font-weight: 500;
 }
 
 .threecard-section__columns {

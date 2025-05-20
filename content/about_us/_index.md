@@ -12,7 +12,7 @@ title = ""
 
 {% threecard(
   title="To drink beer on the moon.",
-  subtitle="私たちspace cubicsは「誰もが月に行ける時代」を目指し,安価で信頼性の高い宇宙用コンピュータを開発するJAXAのベンチャーです。",
+  subtitle="私たちspace cubicsは「誰もが月に行ける時代」を目指し,<br><br>安価で信頼性の高い宇宙用コンピュータを開発するJAXAのベンチャーです。",
   left_card_image="earth.png",
   middle_card_image="mars.png",
   right_card_image="jupiter.png",
