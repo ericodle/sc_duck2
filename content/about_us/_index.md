@@ -31,8 +31,8 @@ title = ""
 {% end %}
 
 {% about_company (
-  title="宇宙開発の未来",
-  subtitle="サステナブルな社会の実現へ",
+  title="COMPANY",
+  subtitle="Space Cubics Overview",
   link="/space",
   link_text="詳細を見る",
   bg="images/space-bg.jpg"

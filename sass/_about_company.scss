@@ -1,15 +1,16 @@
 .about-company-block {
   display: flex;
-  flex-wrap: nowrap; /* prevent wrapping so left and right stay side-by-side */
+  flex-wrap: nowrap;
   gap: 2rem;
   background-size: cover;
   padding: 2rem;
   color: white;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .about-company-left {
-  flex: 0 0 40%; /* fixed 40% width */
-  min-width: 0;  /* allow shrinking */
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,50 +20,53 @@
   font-size: 3rem;
   font-weight: 700;
   margin: 0 0 0.5rem 0;
-  text-align: left;
+  color: white;
 }
 
 .about-company-left__subtitle {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 400;
+  color: white;
   margin: 0 0 1rem 0;
-  text-align: left;
-  opacity: 0.85;
 }
 
 .about-company-left__divider {
-  width: 60px;
-  height: 4px;
+  height: 5px;
+  width: 80px;
   background-color: orange;
+  border-radius: 3px;
   margin-top: 0.5rem;
-  border-radius: 2px;
+}
+
+.about-company-right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .about-company-right-line {
-  margin-bottom: 1.5rem; /* space between lines */
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .about-company-right-line p {
-  margin: 0 0 0.3rem 0; /* small margin below text for divider */
-  font-size: 1.2rem;
+  margin: 0;
+  color: white;
+  font-size: 1.25rem;
+  line-height: 1.3;
 }
 
 .about-company-divider-bar {
   height: 4px;
-  width: 100%;
-  max-width: 300px;  /* shorter line */
+  width: 100%; /* full width of right side container */
+  max-width: 500px; /* or a big number to extend longer */
   background: linear-gradient(
     to right,
-    orange 30%,
-    gray 30%
+    orange 30px,
+    #777 30px
   );
   border-radius: 2px;
-}
-
-.about-company-right__text {
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: white;
-  margin: 0;
-  opacity: 0.85;
 }
