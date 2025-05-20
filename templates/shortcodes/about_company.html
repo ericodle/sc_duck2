@@ -1,30 +1,37 @@
-<div class="about-company-block" style="display: flex; flex-wrap: wrap; gap: 2rem; background-image: url('/{{ bg }}'); background-size: cover; padding: 2rem; color: white;">
-  
-  <!-- Left or right image -->
-  {% if img %}
-  <div class="about-company-image" style="flex: 1; min-width: 250px;">
-    {% if img_link %}
-    <a href="{{ img_link }}">
-      <img src="{{ img }}" alt="{{ alt | default(value="Company image") }}" style="max-width: 100%; height: auto; border-radius: 8px;" />
-    </a>
-    {% else %}
-    <img src="{{ img }}" alt="{{ alt | default(value="Company image") }}" style="max-width: 100%; height: auto; border-radius: 8px;" />
-    {% endif %}
-  </div>
-  {% endif %}
+<div class="about-company-block" style="display: flex; flex-wrap: wrap; background-image: url('/{{ bg }}'); background-size: cover; background-position: center; padding: 2rem; color: white;">
 
-  <!-- Text content -->
-  <div class="about-company-content" style="flex: 2; display: flex; flex-direction: column; justify-content: center; gap: 1rem;">
-    {% if title %}
-    <h2>{{ title }}</h2>
-    {% endif %}
-    <div class="about-company-body">
-      {{ body | safe }}
+  <!-- LEFT SIDE: Subtitle + Title (40%) -->
+  <div class="about-company-left" style="flex: 2; min-width: 250px; display: flex; flex-direction: column; justify-content: center; gap: 1rem; padding-right: 2rem;">
+    {% if subtitle %}
+    <div class="about-company-subtitle" style="font-size: 1.25rem; color: white; opacity: 0.85;">
+      {{ subtitle }}
     </div>
+    {% endif %}
+    {% if title %}
+    <h2 class="about-company-title" style="font-size: 2.5rem; font-weight: bold; color: white; margin: 0;">
+      {{ title }}
+    </h2>
+    {% endif %}
     {% if link %}
-    <div class="about-company-link">
-      <a href="{{ link }}" class="about-company-link-button" style="color: orange; font-weight: bold; text-decoration: underline;">{{ link_text }}</a>
+    <div class="about-company-link" style="margin-top: 1rem;">
+      <a href="{{ link }}" class="about-company-link-button" style="color: orange; font-weight: bold; text-decoration: underline;">
+        {{ link_text }}
+      </a>
     </div>
     {% endif %}
   </div>
+
+  <!-- RIGHT SIDE: Line Items (60%) -->
+  <div class="about-company-right" style="flex: 3; min-width: 300px; display: flex; flex-direction: column; justify-content: center; gap: 1rem;">
+    {% set lines = body | trim | split(pat="\n") %}
+    {% for line in lines %}
+      {% set parts = line | split(pat="｜") %}
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        <div style="font-weight: bold; color: white;">{{ parts.0 | default(value="") }}</div>
+        <div style="color: white; opacity: 0.85; font-size: 0.95rem;">{{ parts.1 | default(value="") }}</div>
+      </div>
+      <div style="height: 3px; width: 100%; background-color: orange; border-radius: 2px;"></div>
+    {% endfor %}
+  </div>
+
 </div>

@@ -30,18 +30,19 @@ title = ""
 ~render~
 {% end %}
 
-
-{% about_company    (
-  title="私たちのビジョン",
-  img="images/rocket.jpg",
-  alt="Rocket to the moon",
-  link="/vision",
-  link_text="もっと読む",
-  img_link="/gallery",
-  bg="images/about-bg.jpg"
+{% about_company (
+  title="宇宙開発の未来",
+  subtitle="サステナブルな社会の実現へ",
+  link="/space",
+  link_text="詳細を見る",
+  bg="images/space-bg.jpg"
 ) %}
-誰もが月に行ける時代。私たちはその未来を築いています。
+探査技術｜最先端のロボティクスを導入  
+通信インフラ｜地球と宇宙をつなぐネットワーク  
+宇宙資源活用｜資源循環型の開発戦略  
+教育プログラム｜次世代リーダーの育成  
 {% end %}
+
 
 
 
