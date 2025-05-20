@@ -15,7 +15,9 @@
       <div class="threecard-section__columns__card-left" style="background-image: url('{{ left_card_image }}');">
         <div class="threecard-section__columns__card-left__content">
           <h2>{{ left_card_title }}</h2>
-          <p style="white-space: pre-line; {{ left_card_subtitle_style | default(value="") }}">{{ left_card_subtitle }}</p>
+          <div style="{{ left_card_subtitle_style | default(value="") }}">
+            <p>{{ left_card_subtitle | safe }}</p>
+          </div>
         </div>
         {% if left_card_link and left_card_link_text %}
           <div class="threecard-section__columns__card-left__btn-container">
@@ -30,7 +32,9 @@
       <div class="threecard-section__columns__card-middle" style="background-image: url('{{ middle_card_image }}');">
         <div class="threecard-section__columns__card-middle__content">
           <h2>{{ middle_card_title }}</h2>
-          <p style="white-space: pre-line; {{ middle_card_subtitle_style | default(value="") }}">{{ middle_card_subtitle }}</p>
+          <div style="{{ middle_card_subtitle_style | default(value="") }}">
+            <p>{{ middle_card_subtitle | safe }}</p>
+          </div>
         </div>
         {% if middle_card_link and middle_card_link_text %}
           <div class="threecard-section__columns__card-middle__btn-container">
@@ -45,7 +49,9 @@
       <div class="threecard-section__columns__card-right" style="background-image: url('{{ right_card_image }}');">
         <div class="threecard-section__columns__card-right__content">
           <h2>{{ right_card_title }}</h2>
-          <p style="white-space: pre-line; {{ right_card_subtitle_style | default(value="") }}">{{ right_card_subtitle }}</p>
+          <div style="{{ right_card_subtitle_style | default(value="") }}">
+            <p>{{ right_card_subtitle | safe }}</p>
+          </div>
         </div>
         {% if right_card_link and right_card_link_text %}
           <div class="threecard-section__columns__card-right__btn-container">

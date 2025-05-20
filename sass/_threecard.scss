@@ -21,33 +21,37 @@
 }
 
 .threecard-section__header-text__main-title {
-  font-size: 3rem;
+  font-size: 4rem; /* increased */
 }
 
 .threecard-section__header-text__main-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.5rem; /* increased */
   margin-top: 0.5rem;
-  line-height: 1.3;
+  line-height: 1.2; /* less space between lines */
   white-space: pre-line;
 }
 
 .threecard-section__columns {
   display: flex;
   gap: 1.5rem;
+  align-items: stretch; /* stretch all columns to equal height */
 }
 
 .threecard-section__columns__column {
   flex: 1;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .threecard-section__columns__card-left,
 .threecard-section__columns__card-middle,
 .threecard-section__columns__card-right {
+  flex: 1; /* fill height of parent column */
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 1.5rem;
+  padding: 2rem; /* a bit more padding */
   border-radius: 16px;
   border: 2px solid white;
   display: flex;
@@ -68,20 +72,20 @@
 .threecard-section__columns__card-left__content h2,
 .threecard-section__columns__card-middle__content h2,
 .threecard-section__columns__card-right__content h2 {
-  font-size: 2rem;
+  font-size: 2.5rem; /* larger titles */
   font-weight: 700;
   color: white;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem; /* more spacing */
 }
 
 .threecard-section__columns__card-left__content p,
 .threecard-section__columns__card-middle__content p,
 .threecard-section__columns__card-right__content p {
-  font-size: 1.125rem;
+  font-size: 1.25rem; /* larger text */
   color: white;
   opacity: 0.85;
-  margin-bottom: 1rem;
-  line-height: 1.6;
+  margin-bottom: 0.75rem; /* slightly less margin */
+  line-height: 1.3; /* tighter line height */
   white-space: pre-line;
 }
 
