@@ -1,9 +1,9 @@
 .about-company-block {
   display: flex;
   flex-wrap: nowrap;
-  gap: 2rem;
+  gap: 1rem;
   background-size: cover;
-  padding: 2rem;
+  padding: 1rem;
   color: white;
 
   width: 90vw;
@@ -20,22 +20,22 @@
 }
 
 .about-company-left__title {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 5rem;
+  font-weight: 300;
   text-align: left;
   margin: 0;
 }
 
 .about-company-left__subtitle {
-  font-size: 1.25rem;
-  font-weight: 400;
+  font-size: 3rem;
+  font-weight: 300;
   opacity: 0.85;
   text-align: left;
   margin: 0;
 }
 
 .about-company-left__divider {
-  width: 60px;
+  width: 100px;
   height: 4px;
   background-color: orange;
   margin-top: 8px;
@@ -43,23 +43,27 @@
 }
 
 .about-company-right {
-  flex: 1 1 60%; /* flexible 60% width */
+  flex: 1 1 60%;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
   justify-content: center;
   align-items: flex-start;
-  width: 100%; /* ensure it uses full container width */
+  width: 100%;
 }
 
 .about-company-right-line {
-  width: 100%;  /* make sure line spans full container width */
+  width: 90%; 
+  font-size: 1.8rem;   
+  line-height: 1.5;
+  margin: 0;
+  color: white;
 }
 
 .about-company-divider-bar {
-  height: 6px;
-  width: 100%; /* full width to stretch divider */
-  background: linear-gradient(to right, orange 30px, #ccc 1px);
+  height: 4px;
+  width: 100%; 
+  background: linear-gradient(to right, orange 60px, #ccc 1px);
   margin-bottom: 0.25rem;
   border-radius: 2px;
 }
