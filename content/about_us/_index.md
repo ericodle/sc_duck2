@@ -37,10 +37,13 @@ title = ""
   link_text="詳細を見る",
   bg="images/space-bg.jpg"
 ) %}
-探査技術｜最先端のロボティクスを導入  
-通信インフラ｜地球と宇宙をつなぐネットワーク  
-宇宙資源活用｜資源循環型の開発戦略  
-教育プログラム｜次世代リーダーの育成  
+company jp name｜space cubics jp
+company en name｜space cubics en
+established｜2018 
+capital funds｜999999999  
+representative｜yashi  
+activities｜space computers  
+address｜123 fakestreet 
 {% end %}
 
 
