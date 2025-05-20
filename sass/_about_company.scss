@@ -5,68 +5,61 @@
   background-size: cover;
   padding: 2rem;
   color: white;
-  width: 90%;
+
+  width: 90vw;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .about-company-left {
-  width: 40%;
+  flex: 0 0 40%; /* fixed 40% width */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 0.5rem;
 }
 
 .about-company-left__title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  margin: 0 0 0.5rem 0;
-  color: white;
+  text-align: left;
+  margin: 0;
 }
 
 .about-company-left__subtitle {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400;
-  color: white;
-  margin: 0 0 1rem 0;
+  opacity: 0.85;
+  text-align: left;
+  margin: 0;
 }
 
 .about-company-left__divider {
-  height: 5px;
-  width: 80px;
+  width: 60px;
+  height: 4px;
   background-color: orange;
+  margin-top: 8px;
   border-radius: 3px;
-  margin-top: 0.5rem;
 }
 
 .about-company-right {
-  width: 60%;
+  flex: 1 1 60%; /* flexible 60% width */
   display: flex;
   flex-direction: column;
+  gap: 1.25rem;
   justify-content: center;
-  gap: 1rem;
+  align-items: flex-start;
+  width: 100%; /* ensure it uses full container width */
 }
 
 .about-company-right-line {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.about-company-right-line p {
-  margin: 0;
-  color: white;
-  font-size: 1.25rem;
-  line-height: 1.3;
+  width: 100%;  /* make sure line spans full container width */
 }
 
 .about-company-divider-bar {
-  height: 4px;
-  width: 100%; /* full width of right side container */
-  max-width: 500px; /* or a big number to extend longer */
-  background: linear-gradient(
-    to right,
-    orange 30px,
-    #777 30px
-  );
+  height: 6px;
+  width: 100%; /* full width to stretch divider */
+  background: linear-gradient(to right, orange 30px, #ccc 1px);
+  margin-bottom: 0.25rem;
   border-radius: 2px;
 }
