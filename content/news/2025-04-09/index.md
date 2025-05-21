@@ -1,11 +1,9 @@
 +++
-authors = ["author A", "author B"]
+authors = ["Author A"]
 title = "組織変更のお知らせ"
-description = "This is a Duckquill post example, this post has nothing but a bunch of text and random formatting, acting like a demo."
 date = 2025-04-09
-updated = "2025-04-09"
 [taxonomies]
-tags = ["Demo", "Test"]
+tags = ["tag1", "tag2"]
 [extra]
 banner = "products_banner2.jpeg"
 
