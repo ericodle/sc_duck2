@@ -37,13 +37,12 @@ title = ""
   link_text="詳細を見る",
   bg="images/space-bg.jpg"
 ) %}
-company jp name｜space cubics jp
-company en name｜space cubics en
-established｜2018 
-capital funds｜999999999  
-representative｜yashi  
-activities｜space computers  
-address｜123 fakestreet 
+会社名｜合同会社Space Cubics
+設立｜2018年
+資本金｜百億円  
+代表者｜荘司 靖 (Yasushi Shoji) 
+住所｜〒060-0053 北海道札幌市中央区南3条東2丁目1番地 ベンチャースクエア301 
+TEL｜050-7112-6213 
 {% end %}
 
 
