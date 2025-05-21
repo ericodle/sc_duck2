@@ -57,12 +57,24 @@ JAXAのベンチャーです。
 {% end %}
 
 {% twocard(
-  title="",
   left_card_image="earth.png", 
   right_card_image="earth.png",
-  link="partners", 
-  link_text="Read More", 
+
+  left_title="RECRUIT",
+  left_subtitle="採用情報",
+  left_footer_1="一緒に働くメンバーを常に募集しています。",
+  left_footer_2="ご興味のある方はご連絡ください。",
+  left_link="/recruit",
+
+  right_title="CONTACT",
+  right_subtitle="お問い合わせ",
+  right_footer_1="お気軽にお問い合わせください。",
+  right_footer_2="担当者よりご返信いたします",
+  right_link="/contact",
+
   bg=""
 ) %}
 ~render~
 {% end %}
+
+
