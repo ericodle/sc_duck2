@@ -14,13 +14,17 @@
       {% set lines = body | split(pat="\n") %}
       {% for line in lines %}
         {% set parts = line | split(pat="｜") %}
-        {% if parts | length == 3 %}
-          <div class="board-card">
-            <img src="{{ parts[2] | trim }}" alt="{{ parts[0] | trim }}" class="board-card__image" />
-            <h3 class="board-card__name">{{ parts[0] | trim }}</h3>
-            <p class="board-card__role">{{ parts[1] | trim }}</p>
-          </div>
-        {% endif %}
+        {% set name = parts[0] | trim %}
+        {% set role = parts[1] | trim %}
+        {% set img = parts | length > 2 and parts[2] | trim or "" %}
+
+        <div class="board-card">
+          {% if img != "" %}
+            <img src="{{ img }}" alt="{{ name }}" class="board-card__image" />
+          {% endif %}
+          <h3 class="board-card__name">{{ name }}</h3>
+          <p class="board-card__role">{{ role }}</p>
+        </div>
       {% endfor %}
     </div>
   </div>
