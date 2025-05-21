@@ -47,14 +47,34 @@ TEL｜050-7112-6213
 
 {% board_members (
   title="EXECUTIVES",
-  subtitle="Our Leadership Team"
+  subtitle="Our leadership team"
 ) %}
-Takahiro Yashi｜Founder & CEO
+Takahiro Yashi｜Founder & CEO 
 Kana Suzuki｜COO
-Hideo Tanaka｜CTO｜images/hideo.jpg
+Hideo Tanaka｜CTO
 Mika Arai｜CFO
-Daisuke Honda｜Engineer｜images/daisuke.jpg
+Daisuke Honda｜Engineer
 Rei Kato｜Designer
 {% end %}
 
 
+{% twocard(
+  left_card_image="earth.png", 
+  right_card_image="",
+
+  left_title="RECRUIT",
+  left_subtitle="採用情報",
+  left_footer_1="一緒に働くメンバーを常に募集しています。",
+  left_footer_2="ご興味のある方はご連絡ください。",
+  left_link="/recruit",
+
+  right_title="CONTACT",
+  right_subtitle="お問い合わせ",
+  right_footer_1="お気軽にお問い合わせください。",
+  right_footer_2="担当者よりご返信いたします",
+  right_link="/contact",
+
+  bg=""
+) %}
+~render~
+{% end %}
