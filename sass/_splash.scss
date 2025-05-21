@@ -16,7 +16,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  margin-left: 35%;
+  margin-left: 25%;
   padding: 0;
 }
 
@@ -64,7 +64,7 @@
 .big-text {
   font-size: 20rem;
   font-weight: bold;
-  font-style: italic;
+  font-style: italic; /* keep this for true italic glyphs */
   font-family: 'Arial', sans-serif;
   color: black;
   white-space: nowrap;
@@ -73,6 +73,12 @@
   position: relative;
   z-index: 1;
   line-height: 1.1;
+
+  max-width: 75vw;      
+  overflow: hidden;     
+  text-overflow: clip;
+
+  transform: skew(-15deg);  /* add skew for stronger slant */
 }
 
 .big-text span {
@@ -93,7 +99,7 @@
 /* Scroll Hint Styles */
 .scroll-hint {
   position: absolute;
-  left: 18rem; 
+  left: 10rem; 
   top: 50%;
   transform: translateY(-50%);
   color: white;
