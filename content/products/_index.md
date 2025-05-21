@@ -27,7 +27,8 @@ title = ""
 ~render~
 {% end %}
 
-{% twocol(title="SC-OBC Module A1", img="sc_obcpic.png", alt="Diagram", link="anzora_link", link_text="Read More", img_link="anzora_link", bg="") %}
+{% twocol(title="SC-OBC Module A1", img="sc_obcpic.png", alt="Diagram", link="https://sc-obc-fpga-technical-reference-manual.readthedocs.io/ja/latest/", link_text="Read More", img_link="https://sc-obc-fpga-technical-reference-manual.readthedocs.io/ja/latest/", bg="") %}
+<br> <br> 
 JAXAが国際宇宙ステーションで培った信頼性設計技術を基にキューブサット用に最適設計した宇宙用コンピュータです。
 <br> <br> 
 Xilinx製 Artix-7 FPGAを採用し、インターフェースの種類や数をユーザ毎に柔軟に対応することができます。キューブサット以外の宇宙機や地上の産業用途にも使用可能です。
