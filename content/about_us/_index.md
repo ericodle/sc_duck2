@@ -45,6 +45,16 @@ title = ""
 TEL｜050-7112-6213 
 {% end %}
 
-
+{% board_members (
+  title="BOARD MEMBERS",
+  subtitle="executive profiles"
+) %}
+Takahiro Yashi｜Founder & CEO｜images/yashi.jpg
+Kana Suzuki｜COO｜images/kana.jpg
+Hideo Tanaka｜CTO｜images/hideo.jpg
+Mika Arai｜CFO｜images/mika.jpg
+Daisuke Honda｜Engineer｜images/daisuke.jpg
+Rei Kato｜Designer｜images/rei.jpg
+{% end %}
 
 

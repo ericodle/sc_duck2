@@ -1,0 +1,27 @@
+<div class="board-members">
+  <div class="board-members-left">
+    {% if title %}
+      <h2 class="board-members__title">{{ title }}</h2>
+    {% endif %}
+    {% if subtitle %}
+      <p class="board-members__subtitle">{{ subtitle }}</p>
+    {% endif %}
+    <div class="board-members__divider"></div>
+  </div>
+
+  <div class="board-members-right">
+    <div class="board-members-grid">
+      {% set lines = body | split(pat="\n") %}
+      {% for line in lines %}
+        {% set parts = line | split(pat="｜") %}
+        {% if parts | length == 3 %}
+          <div class="board-card">
+            <img src="{{ parts[2] | trim }}" alt="{{ parts[0] | trim }}" class="board-card__image" />
+            <h3 class="board-card__name">{{ parts[0] | trim }}</h3>
+            <p class="board-card__role">{{ parts[1] | trim }}</p>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
