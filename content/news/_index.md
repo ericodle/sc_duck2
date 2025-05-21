@@ -3,7 +3,7 @@ title = "SPACE CUBICS の 最新情報"
 sort_by = "date"
 template = "article_list.html"
 page_template = "article.html"
-paginate_by = 2
+paginate_by = 8
 +++
 
 スペースキュービクスの最新情報をお届けします。
