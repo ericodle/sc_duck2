@@ -1,8 +1,7 @@
 +++
-title = "FPGA Engineer"
-description = "We need someone to do the job."
+title = "FPGAエンジニア"
+description = "募集中"
 date = 2023-08-31
-updated = "2024-06-21"
 [taxonomies]
 tags = ["files", "pens"]
 +++

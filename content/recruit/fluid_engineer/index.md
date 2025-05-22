@@ -1,8 +1,7 @@
 +++
-title = "Thermal and Fluid Systems Engineer"
-description = "We need someone to do the job."
+title = "熱流体系エンジニア"
+description = "募集中"
 date = 2023-08-31
-updated = "2024-06-21"
 [taxonomies]
 tags = ["files", "pens"]
 +++
