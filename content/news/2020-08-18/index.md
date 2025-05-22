@@ -1,5 +1,4 @@
 +++
-authors = ["Author A"]
 title = "組織変更のお知らせ"
 date = 2025-04-09
 [taxonomies]
