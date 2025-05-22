@@ -2,8 +2,6 @@
 title = "推進系エンジニア"
 description = "募集中"
 date = 2023-08-31
-[taxonomies]
-tags = ["files", "pens"]
 +++
 
 募集中

@@ -3,8 +3,6 @@ title = "ハードウェアエンジニア"
 description = "募集中"
 date = 2023-08-31
 updated = "2024-06-21"
-[taxonomies]
-tags = ["files", "pens"]
 +++
 
 ## 募集中  
