@@ -1,6 +1,6 @@
 +++
-title = "JAXA初の共同設立ベンチャー「Space Cubics」誕生"
-date = 2018-09-25
+title = "いでよ宇宙起業家、JAXA発スタートアップ相次ぐ"
+date = 2019-10-31
 [taxonomies]
 tags = ["tag1", "tag2"]
 [extra]
