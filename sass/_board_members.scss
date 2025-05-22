@@ -1,10 +1,10 @@
 .board-members {
   display: flex;
   gap: 1.5rem;
-  width: 98vw;            /* almost full viewport width */
-  max-width: 90vw;        /* remove max width limit */
+  width: 98vw;
+  max-width: 90vw;
   margin: 0 auto;
-  padding: 2rem 2vw;      /* small horizontal padding from viewport edges */
+  padding: 2rem 2vw;
   box-sizing: border-box;
   color: white;
   background-color: transparent;
@@ -55,14 +55,20 @@
   padding: 1.3rem;
   text-align: center;
   backdrop-filter: blur(10px);
+  color: white;
 }
 
 .board-card__image {
+  display: block;
   width: 100%;
   max-height: 200px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 0.7rem;
+}
+
+.board-card:not(.has-image) .board-card__image {
+  display: none;
 }
 
 .board-card__name {
@@ -71,8 +77,25 @@
   margin: 0.6rem 0 0.3rem;
 }
 
+.board-card__title {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #ccc;
+  margin: 0.2rem 0 0.4rem;
+}
+
 .board-card__role {
   font-size: 1.1rem;
-  font-weight: 300;
+  font-weight: 400;
   opacity: 0.9;
+  margin: 0.3rem 0;
+}
+
+.board-card__bio {
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.85;
+  line-height: 1.5;
+  margin-top: 0.6rem;
+  text-align: left;
 }

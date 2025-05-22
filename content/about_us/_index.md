@@ -49,12 +49,12 @@ TEL｜050-7112-6213
   title="EXECUTIVES",
   subtitle="Our leadership team"
 ) %}
-Takahiro Yashi｜Founder & CEO 
-Kana Suzuki｜COO
-Hideo Tanaka｜CTO
-Mika Arai｜CFO
-Daisuke Honda｜Engineer
-Rei Kato｜Designer
+Takahiro Yashi｜Founder｜CEO｜Takahiro founded the company in 2010 with a vision for innovation.｜/images/takahiro.jpg
+Kana Suzuki｜Co-Founder｜COO｜Kana oversees daily operations and strategic planning.｜/images/kana.jpg
+Hideo Tanaka｜Tech Lead｜CTO｜Hideo is responsible for the technology roadmap and architecture.｜/images/hideo.jpg
+Mika Arai｜Finance Head｜CFO｜Mika leads the financial strategy and investor relations.｜/images/mika.jpg
+Daisuke Honda｜Engineer｜Lead Developer｜Daisuke specializes in backend systems and infrastructure.｜/images/daisuke.jpg
+Rei Kato｜Creative｜Designer｜Rei directs all aspects of design and branding.｜/images/rei.jpg
 {% end %}
 
 
