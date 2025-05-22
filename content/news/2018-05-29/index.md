@@ -1,0 +1,13 @@
++++
+title = "いでよ宇宙起業家、JAXA発スタートアップ相次ぐ"
+date = 2018-05-29
+[taxonomies]
+tags = ["tag1", "tag2"]
+[extra]
+banner = "products_banner2.jpeg"
++++
+
+国立研究開発法人 宇宙航空研究開発機構(JAXA) より「JAXAベンチャー」の認定を受けました。
+[article link](http://aerospacebiz.jaxa.jp/venture/)  
+
+

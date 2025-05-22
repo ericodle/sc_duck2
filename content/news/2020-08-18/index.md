@@ -1,6 +1,6 @@
 +++
 title = "組織変更のお知らせ"
-date = 2025-04-09
+date = 2020-08-18
 [taxonomies]
 tags = ["tag1", "tag2"]
 [extra]
