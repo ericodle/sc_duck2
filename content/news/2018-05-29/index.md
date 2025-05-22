@@ -1,5 +1,5 @@
 +++
-title = "いでよ宇宙起業家、JAXA発スタートアップ相次ぐ"
+title = "「JAXAベンチャー」の認定"
 date = 2018-05-29
 [taxonomies]
 tags = ["tag1", "tag2"]
