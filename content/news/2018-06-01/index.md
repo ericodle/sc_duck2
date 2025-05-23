@@ -1,8 +1,6 @@
 +++
 title = "合同会社Space Cubicsを設立。"
 date = 2018-06-01
-[taxonomies]
-tags = ["tag1", "tag2"]
 [extra]
 banner = "products_banner2.jpeg"
 +++

@@ -1,8 +1,6 @@
 +++
 title = "【ディープテックを追え】 宇宙用コンピューターの価格低減でビジネス振興"
 date = 2022-03-07
-[taxonomies]
-tags = ["tag1", "tag2"]
 [extra]
 banner = "products_banner2.jpeg"
 +++

@@ -60,7 +60,7 @@ TEL｜050-7112-6213
 
 {% twocard(
   left_card_image="earth.png", 
-  right_card_image="",
+  right_card_image="ide.webp",
 
   left_title="RECRUIT",
   left_subtitle="採用情報",

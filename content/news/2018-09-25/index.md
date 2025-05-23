@@ -1,8 +1,6 @@
 +++
 title = "JAXA初の共同設立ベンチャー「Space Cubics」誕生"
 date = 2018-09-25
-[taxonomies]
-tags = ["tag1", "tag2"]
 [extra]
 banner = "products_banner2.jpeg"
 +++

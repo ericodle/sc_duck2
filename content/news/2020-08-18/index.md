@@ -1,8 +1,6 @@
 +++
 title = "組織変更のお知らせ"
 date = 2020-08-18
-[taxonomies]
-tags = ["tag1", "tag2"]
 [extra]
 banner = "products_banner2.jpeg"
 +++

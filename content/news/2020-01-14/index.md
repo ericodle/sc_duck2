@@ -1,8 +1,6 @@
 +++
 title = "J-TECH STARTUP SUMMIT 2019（第4回　J-TECH STARTUP SUMMIT）"
 date = 2020-01-14
-[taxonomies]
-tags = ["tag1", "tag2"]
 [extra]
 banner = "products_banner2.jpeg"
 +++

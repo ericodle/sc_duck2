@@ -1,8 +1,6 @@
 +++
 title = "「JAXAベンチャー」の認定"
 date = 2018-05-29
-[taxonomies]
-tags = ["tag1", "tag2"]
 [extra]
 banner = "products_banner2.jpeg"
 +++
