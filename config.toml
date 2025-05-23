@@ -5,24 +5,13 @@ description = "Site built using Zola and the Duckquill Theme."
 compile_sass = true
 minify_html = true
 generate_feeds = true
-# Only the first file will be used in the navbar feed button,
-# other feeds will still be available in page's head.
+
 feed_filenames = ["rss.xml", "atom.xml"]
 build_search_index = true
 author = "EO"
 
-# Based on https://github.com/welpo/tabi
-#
-# To translate the entire theme, there must be a file with the same ISO 639-1 or BCP 47
-# language code in the `i18n` directory of your site or the Duckquill theme.
-# For example, "i18n/fr.toml" for French or "i18n/zh-Hans.toml" for Simplified Chinese.
-# Otherwise the theme will be in English.
-#
-# ISO 639-1: https://localizely.com/iso-639-1-list/
-# BCP 47: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 default_language = "en"
 
-taxonomies = [{ name = "tags", feed = true }]
 
 [markdown]
 highlight_code = true
@@ -35,7 +24,6 @@ smart_punctuation = true
 bottom_footnotes = true
 
 [search]
-# index_format = "elasticlunr_json"
 index_format = "fuse_json"
 
 [languages.fr]
@@ -43,89 +31,18 @@ title = "Duckquill"
 description = "Un thème affirmé, moderne, beau et clair pour Zola."
 generate_feeds = true
 
-taxonomies = [{ name = "tags", feed = true }]
 
 [extra]
-# Which theme should be used by default (light/dark).
-#
 default_theme = "dark"
-#
-# Sets theme and browser theme color.
-# See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
 accent_color = "#ff7800"
-# Ditto but for the dark theme.
-# If not set regular variant will be used.
 accent_color_dark = "#ffa348"
-# Whether to use fonts bundled with Duckquill instead of system ones.
-# Keep in mind that it also changes the style of headings.
-#
-# bundled_fonts = true
-#
-# Use emoji as a favicon.
-# Only one emoji is being rendered, everything else is truncated.
-#
-# emoji_favicon = "🦆🪶"
-#
-# URL to website's issue tracker
-issues_url = "https://codeberg.org/daudix/duckquill/issues"
 
-# URLs
-source_url = "https://codeberg.org/daudix/duckquill"
-
-# Additional CSS styles; expects them to be in the "./static/" directory.
-# If you are using Sass it will be generated there automatically.
-#
-# styles = [
-#   "YOUR_STYLE.css",
-#   "ALSO_YOUR_STYLE.css"
-# ]
-#
-# Additional JavaScript scripts; expects them to be in the "./static/" directory.
-#
-# scripts = [
-#   "YOUR_SCRIPT.js",
-#   "ALSO_YOUR_SCRIPT.js"
-# ]
-#
-# Whether to show "copy code" button on all code blocks
-# that have the language set.
-# See https://www.getzola.org/documentation/content/syntax-highlighting/
 show_copy_button = true
-# Whether to show estimated read time in posts.
 show_reading_time = true
-#
-# Whether to show a share button in article's quick actions.
-# Uses https://shareopenly.org.
+
 show_share_button = true
-# Whether to show the backlinks button for linked articles in the article's quick actions
 show_backlinks = true
-# Whether to enable the KaTeX library for rendering LaTeX.
-# Note: This will make your page significantly heavier.
-# Instead, consider enabling it per page/section.
-# katex = true
-#
-# Whether to render table of contents on all pages.
-# Will not be rendered if page doesn't have any headings.
-# Can be set per page/section.
-# toc = true
-#
-# Whether to render inline table of contents at the top of all pages,
-# in addition to floating quick navigation buttons.
-# Can be set per page/section.
-# toc_inline = true
-#
-# Whether to use numbered (ordered) list for table of contents.
-# Can be set per page/section.
-# toc_ordered = true
-#
-# Custom separator used across the theme.
-# separator = "•"
-# Custom separator used in title tag and posts metadata.
-# title_separator = "-"
-#
-# Whether to use Content Security Policy.
-# Keep in mind that although this can potentially increase security,
-# it can break some stuff, in which case you will need to set custom policy.
+
 csp = [
 	{ directive = "font-src", domains = ["'self'"] },
 	{ directive = "img-src", domains = ["'self'", "https:", "data:"] },
@@ -137,29 +54,11 @@ csp = [
 	{ directive = "base-uri", domains = ["'none'"] },
 	{ directive = "form-action", domains = ["'none'"] }
 ]
-# Uncomment this to disable the card displayed in share previews
-# card = false
-
-#styles = ["mods.css"]
 
 [extra.nav]
 
-# Whether to automatically hide nav when not hovered or focused
-# auto_hide = true
-# Whether to show the Atom/RSS feed button in the nav
-# show_feed = true
-# Whether to show the manual theme switcher in the nav
-
 show_theme_switcher = true
 
-# Whether to show the link to the source repository in the nav
-
-# show_repo = true
-
-# Links used in the nav.
-# For local files use same link format as in Markdown,
-# i.e. "@/blog/_index.md".
-# See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
 	{ url = "@/about_us/_index.md", name = "About us" },
 	{ url = "@/products/_index.md", name = "Products"},
@@ -168,62 +67,12 @@ links = [
 ]
 
 [extra.footer]
-# Links used in the footer.
-# Same as the nav ones.
-#links = [
-#	{ url = "https://github.com/spacecubics", name = "GitHub" },
-#	{ url = "https://daudix.one/coffee/", name = "Coffee" },
-#	{ url = "https://daudix.one/coffee/", name = "Coffee" },
-#	{ url = "https://daudix.one/coffee/", name = "Coffee" }
-#]
-# Social links in the footer.
-# Any URL-encoded SVG can be used as an icon.
-# https://simpleicons.org is the recommended source of SVG icons.
-# For URL encoding use https://yoksel.github.io/url-encoder/.
-# Make sure that "external quotes" are set to "double".
+
 socials = [
 	{ url = "https://github.com/spacecubics", name = "GitHub", icon = "%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EGitHub%3C/title%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E" },
 	{ url = "https://www.linkedin.com/company/spacecubics", name = "Linkedin", icon = "%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3ELinkedIn%3C/title%3E%3Cpath d='M20.447 20.452h-3.554v-5.569c0-1.328-.026-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.354V9h3.415v1.561h.049c.476-.9 1.637-1.852 3.369-1.852 3.6 0 4.266 2.37 4.266 5.451v6.292zM5.337 7.433a2.07 2.07 0 1 1 .001-4.14 2.07 2.07 0 0 1-.001 4.14zm1.777 13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.225.792 24 1.771 24h20.451C23.2 24 24 23.225 24 22.271V1.729C24 .774 23.2 0 22.222 0z'/%3E%3C/svg%3E"},
 	{ url = "https://www.youtube.com/channel/UCcTXF6z-D5B2xkDamlPzSzg", name = "YouTube", icon = "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3Cpath d='M549.7 124.1c-6.3-23.7-24.9-42.3-48.6-48.6C456.5 64 288 64 288 64S119.5 64 74.9 75.5c-23.7 6.3-42.3 24.9-48.6 48.6C15.8 168.7 15.8 256 15.8 256s0 87.3 10.5 131.9c6.3 23.7 24.9 42.3 48.6 48.6C119.5 448 288 448 288 448s168.5 0 213.1-11.5c23.7-6.3 42.3-24.9 48.6-48.6 10.5-44.6 10.5-131.9 10.5-131.9s0-87.3-10.5-131.9zM232 334.8V177.2L361.8 256 232 334.8z'/%3E%3C/svg%3E" },
 	{ url = "https://x.com/SpaceCubics", name = "X", icon = "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 1227'%3E%3Cpath d='M756.5 553.5L1143 0H1041L711 459 425 0H0l412.5 635.5L0 1227h102l346-488 300 488h425L756.5 553.5zM681 725l-79-125-56.5-90L141 88h227l216 342 56.5 89L1059 1139H834L681 725z'/%3E%3C/svg%3E" }
 ]
-# Whether to show "© Title, YEAR"
-# show_copyright = true
-# Whether to show "Powered by Zola and Duckquill"
-# show_powered_by = true
-# Whether to show link to website source
+
 show_source = false
-# Custom copyright text
-#
-# copyright = "© *Aperture* **Science** ~~Innovators~~, `1972`"
-
-# Based on https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/
-#
-# Mastodon-powered commenting.
-# Values can be overridden in the front-matter, e.g.
-# for multi-author blogs or guest posts.
-#
-# These variables are also used for Mastodon verification,
-# the needed rel="me" link is set in the head based on these.
-[extra.comments]
-# Your Mastodon API host; instance that you have an account on.
-host = "vmst.io"
-# Your Mastodon username; used to determine who the original poster is.
-user = "daudix"
-# Whether to show the QR code to Mastodon post
-show_qr = true
-
-# GoatCounter analytics; enabled only if present in config.
-[extra.goatcounter]
-# Your GoatCounter server; goatcounter.com is used by default.
-#
-# host = "YOUR_SERVER"
-#
-# Your GoatCounter username
-user = "duckquill"
-
-[extra.debug]
-# Display outlines around all elements for debugging purposes
-layout = false
-# Don't load any styles for debugging purposes
-no_styles = false
