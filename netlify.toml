@@ -4,12 +4,3 @@ publish = "public"
 
 [build.environment]
 ZOLA_VERSION = "0.13.0"
-
-[context.deploy-preview]
-command = "zola build --base-url $DEPLOY_PRIME_URL"
-
-[context.branch-deploy]
-command = "zola build --base-url $DEPLOY_PRIME_URL"
-
-[context.production]
-command = "zola build --base-url $URL"
