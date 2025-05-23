@@ -1,9 +1,7 @@
-base_url = "https://ericodle.github.io/sc_duck2/"
+base_url = "spacecubics.com"
 title = "Space Cubics"
 description = "Drinking beer on the moon."
 default_language = "ja"
-generate_feeds = true
-feed_filenames = ["atom.xml"]
 
 compile_sass = true
 minify_html = true
@@ -12,27 +10,18 @@ build_search_index = false
 [markdown]
 highlight_code = true
 highlight_theme = "css"
-highlight_themes_css = [
-    { theme = "solarized-dark", filename = "syntax-theme-dark.css" },
-    { theme = "solarized-light", filename = "syntax-theme-light.css" }
-]
+
 smart_punctuation = true
 bottom_footnotes = true
 
 [languages.en]
 title = "SpaceCubics"
 description = "English site"
-generate_feeds = true
-feed_filenames = ["atom.xml"]
-
-[languages.ja]
-generate_feeds = true
-feed_filenames = ["atom.xml"]
 
 [extra]
 default_theme = "dark"
 accent_color = "#ff7800"
-accent_color_dark = "#ffa348"
+accent_color_dark = "#ffa348"   
 
 show_copy_button = true
 show_reading_time = true
@@ -40,7 +29,7 @@ show_share_button = true
 show_backlinks = true
 
 contact_url = "contact"
-source_url = "https://github.com/spacecubics/spacecubics-website"
+source_url = "https://github.com/spacecubics/www"
 
 csp = [
     { directive = "font-src", domains = ["'self'"] },
@@ -55,7 +44,6 @@ csp = [
 ]
 
 [extra.nav]
-show_theme_switcher = true
 show_feed = true
 show_repo = true
 auto_hide = false
