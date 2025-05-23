@@ -35,7 +35,7 @@ Xilinx製 Artix-7 FPGAを採用し、インターフェースの種類や数を�
 <br> 
 {% end %}
 
-{% section_title(bg="images/bg.jpg", title="使用例", subtitle="current projects", slogan="") %}
+{% section_title(bg="images/bg.jpg", title="使用例", subtitle="Current projects", slogan="") %}
 ~render~
 {% end %}
 

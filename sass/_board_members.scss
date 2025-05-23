@@ -6,7 +6,6 @@
   margin: 0 auto;
   padding: 2rem 2vw;
   box-sizing: border-box;
-  color: white;
   background-color: transparent;
 }
 
@@ -18,15 +17,15 @@
 }
 
 .board-members__title {
-  font-size: 3.4rem;
-  font-weight: 600;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 4em; 
   margin: 0;
 }
 
 .board-members__subtitle {
-  font-size: 1.7rem;
-  font-weight: 300;
-  opacity: 0.85;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(190, 190, 190);
+  font-size: 2em; 
   margin: 0.6rem 0;
 }
 
@@ -72,28 +71,27 @@
 }
 
 .board-card__name {
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em; 
   margin: 0.6rem 0 0.3rem;
 }
 
 .board-card__title {
-  font-size: 0.95rem;
-  font-weight: 300;
-  color: #ccc;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em; 
   margin: 0.2rem 0 0.4rem;
 }
 
 .board-card__role {
-  font-size: 1.1rem;
-  font-weight: 400;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em; 
   opacity: 0.9;
   margin: 0.3rem 0;
 }
 
 .board-card__bio {
-  font-size: 1rem;
-  font-weight: 300;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em; 
   opacity: 0.85;
   line-height: 1.5;
   margin-top: 0.6rem;
