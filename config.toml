@@ -47,6 +47,9 @@ csp = [
 
 [extra.nav]
 show_theme_switcher = true
+show_feed = true          # Added to enable feed menu/link
+show_repo = true          # Added to enable repo link in nav
+auto_hide = false         # Optional: control if nav auto hides or not
 links = [
     { url = "@/about_us/_index.md", name = "About us" },
     { url = "@/products/_index.md", name = "Products" },
@@ -62,3 +65,6 @@ socials = [
     { url = "https://x.com/SpaceCubics", name = "X", icon = "..." }
 ]
 show_source = false
+
+extra.contact_url = "contact"          # Added for contact link usage if needed
+extra.source_url = "https://github.com/spacecubics/spacecubics-website" # Example repo url for nav repo icon
