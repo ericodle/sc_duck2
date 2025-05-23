@@ -25,6 +25,10 @@ description = "English site"
 generate_feeds = true
 feed_filenames = ["atom.xml"]
 
+[languages.ja]
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
 [extra]
 default_theme = "dark"
 accent_color = "#ff7800"
