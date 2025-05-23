@@ -19,7 +19,6 @@ title = "Home"
 宇宙用コンピュータモジュール 
 {% end %}
 
-
 {% section_title(bg="images/bg.jpg", title="ABOUT US", subtitle="To drink beer", slogan="ON THE MOON") %}
 ~render~
 {% end %}
@@ -30,7 +29,6 @@ title = "Home"
 安価で信頼性の高い宇宙用コンピュータを開発する<br>
 JAXAのベンチャーです。
 {% end %}
-
 
 {% section_title(bg="images/bg.jpg", title="PARTNERS", subtitle="Our mission is to support", slogan="SPACE COMPUTING") %}
 ~render~
@@ -45,12 +43,11 @@ JAXAのベンチャーです。
 持続可能な成長を支援することが 私たちの使命です。<br>
 {% end %}
 
-
 {% section_title(bg="images/bg.jpg", title="NEWS", subtitle="Our advancements in space computing are", slogan="REGULARLY UPDATED") %}
 ~render~
 {% end %}
 
-{% twocol(title="", img="", alt="", link="news", link_text="Read More", img_link="", bg="products_banner_lowwhite.jpeg") %}
+{% twocol(title="", img="", alt="", link="news", link_text="Read More", img_link="", bg="bw_pcb.jpg") %}
 スペースコンピューティングの最新情報をお届けします！ <br>
 私たちのチームは、宇宙探査に力を与える <br>
 技術の進歩に専念しています。<br>

@@ -5,12 +5,14 @@
 
 .columns {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 60px;
-  margin-bottom: -250px; /* Pull down over the footer */
+  margin: 0 auto -250px auto;
+  max-width: 60vw; 
   position: relative;
   z-index: 2;
   padding-top: 4rem;
+  justify-content: center;
 }
 
 .column {
@@ -27,17 +29,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 30px;
+  padding: 50px;
   color: white;
-}
-
-.left-card {
-  /* Background is set via inline style */
-}
-
-.right-card {
-  background-color: rgb(51, 48, 48);
-  border: 3px solid white;
 }
 
 .card-content {
@@ -45,35 +38,37 @@
 }
 
 .card-header {
-  font-size: 3rem;         /* Bigger text */
-  font-weight: 500;        /* Less bold */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 3em; 
   margin: 0;
 }
 
 .card-subheader {
-  font-size: 1.5rem;       /* Bigger text */
-  font-weight: 400;        /* Lighter */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em; 
   margin: 0.5rem 0;
 }
 
 .divider-bar {
   width: 60px;
   height: 4px;
-  background-color: #f97316; /* Orange */
+  background-color: #f97316; 
   border-radius: 2px;
   margin-top: 0.5rem;
 }
 
 .card-footer-text {
-  font-size: 1.3rem;       /* Bigger text */
-  font-weight: 400;        /* Less bold */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em; 
   line-height: 1.8;
   margin-top: auto;
   margin-bottom: 90px;
 }
 
 .card-footer-text p {
-  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em; 
+  text-align: center; 
 }
 
 .btn-container {
@@ -119,4 +114,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-40%, -50%);
+}
+
+.columns .column:nth-child(2) .two-card {
+  outline: 3px solid white;
 }

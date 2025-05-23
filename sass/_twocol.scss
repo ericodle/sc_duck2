@@ -1,5 +1,3 @@
-/* hero-section.css */
-
 .hero-section {
   width: 100%;
   height: 800px;
@@ -19,19 +17,20 @@
   flex: 0 0 30%;
   min-width: 250px;
   margin-left: auto;
-  font-family: 'Arial', sans-serif;  /* Added sans-serif font */
-  font-size: 1.2rem;  /* Increased font size */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em; 
 }
 
 .hero-text h2 {
   margin-bottom: 1rem;
-  font-size: 2.5rem;  /* Larger font size for the title */
-  font-family: 'Arial', sans-serif;  /* Ensures the title uses a sans-serif font */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em; 
 }
 
 .hero-text p {
   margin-bottom: 1rem;
-  font-size: 1.1rem;  /* Slightly larger paragraph text */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em; 
 }
 
 .hero-link {
@@ -44,6 +43,8 @@
   border-radius: 9999px;
   font-weight: 600;
   transition: background-color 0.3s ease;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em; 
 }
 
 .hero-link:hover {
