@@ -79,15 +79,3 @@ socials = [
 ]
 show_source = false
 
-[extra.comments]
-host = "vmst.io"
-user = "daudix"
-show_qr = true
-
-[extra.goatcounter]
-
-user = "duckquill"
-
-[extra.debug]
-layout = false
-no_styles = false
