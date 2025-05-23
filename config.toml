@@ -3,6 +3,7 @@ title = "Space Cubics"
 description = "Drinking beer on the moon."
 default_language = "ja"
 feed_filenames = ["atom.xml"]
+generate_feeds = true
 
 compile_sass = true
 minify_html = true
