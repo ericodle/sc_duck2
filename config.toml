@@ -1,11 +1,12 @@
 base_url = "https://spacecubics.com"
+title = "Space Cubics"
+description = "Drinking beer on the moon."
+default_language = "ja"
+feed_filenames = ["atom.xml"]
 
 compile_sass = true
 minify_html = true
 build_search_index = false
-
-default_language = "ja"
-author = "EO"
 
 [markdown]
 highlight_code = true
@@ -22,11 +23,6 @@ title = "SpaceCubics"
 description = "English site"
 generate_feeds = true
 
-[languages.ja]
-title = "SpaceCubics"
-description = "Japanese site"
-generate_feeds = true
-
 [extra]
 default_theme = "dark"
 accent_color = "#ff7800"
@@ -36,8 +32,6 @@ show_copy_button = true
 show_reading_time = true
 show_share_button = true
 show_backlinks = true
-
-feed_filenames = ["atom.xml", "rss.xml"]
 
 csp = [
     { directive = "font-src", domains = ["'self'"] },
